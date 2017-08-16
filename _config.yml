@@ -1,0 +1,47 @@
+# Site settings
+title: Jwendl.NET | All about Code
+description: "Justin Wendlandt's blog about all things code."
+baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
+url: "https://jwendl.github.io/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+# User settings
+username: jwendl
+user_title: Justin Wendlandt - Software Development Engineer
+email: jwendl@hotmail.com
+twitter_username: jwendl
+github_username:  jwendl
+stackoverflow_username: jwendl
+gplus_username:  jwendl
+disqus_username: jwendl-net-all-about-code
+profile_picture: https://avatars2.githubusercontent.com/u/1068431?v=4&u=a3439d49b38927dfacfab6215d7094636728599d&s=400
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+links:
+  - title: home
+    url: /
+  - title: my posts
+    url: /posts
+  - title: series
+    url: /series
+  - title: tags
+    url: /tags
+  - title: about me
+    url: /about
+# projects in header index
+projects:
+  - name: Sql Server Code Analysis
+    url: https://github.com/jwendl/SqlServerCodeAnalysis
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
