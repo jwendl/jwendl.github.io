@@ -20,10 +20,11 @@ The first thing for me was installation. Since WSL (Windows Subsystem for Linux)
 
 * Install [Docker for Windows](https://docs.docker.com/docker-for-windows/install/).
 * Configure Docker for Windows with setting up the proxy port access.
+![Docker for Windows Settings](/assets/img/docker-settings.png)
 * Install docker on your Bash instance.
 {% highlight bash %}
-user@pc:~$ wget -qO- https://get.docker.com/ | sh
-user@pc:~$ sudo usermod -aG docker jwendl
+wget -qO- https://get.docker.com/ | sh
+sudo usermod -aG docker jwendl
 {% endhighlight %}
 * Open the Ubuntu on Windows application and create a file ~./bash_aliases
 {% highlight bash %}
@@ -83,13 +84,13 @@ user@pc:~$ docker kill 4f
 
 This example is assuming an ASP.NET Core application.
 {% highlight bash %}
-user@pc:~$ dotnet publish -c Release out
-user@pc:~$ cp Dockerfile out
-user@pc:~$ docker build -t my-tag:v1 out
-user@pc:~$ docker run -d -p 8080:8080 my-tag:v1
-user@pc:~$ docker login myregistry.azurecr.io -u guid -p P4SSW0rd!
-user@pc:~$ docker tag 4f myregistry.azurecr.io/samples/my-tag
-user@pc:~$ docker push myregistry.azurecr.io/samples/my-tag
+dotnet publish -c Release out
+cp Dockerfile out
+docker build -t my-tag:v1 out
+docker run -d -p 8080:8080 my-tag:v1
+docker login myregistry.azurecr.io -u guid -p P4SSW0rd!
+docker tag 4f myregistry.azurecr.io/samples/my-tag
+docker push myregistry.azurecr.io/samples/my-tag
 {% endhighlight %}
 
 After all of the commands finish, you can now reference myregistry.azurecr.io in your docker container.
