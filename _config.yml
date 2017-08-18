@@ -45,3 +45,14 @@ projects:
     url: https://github.com/jwendl/SqlServerCodeAnalysis
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
+
+# What GitHub uses...
+kramdown:
+  input: GFM
+  hard_wrap: false
+gems:
+  - jekyll-coffeescript
+  - jekyll-gist
+whitelist:
+  - jekyll-coffeescript
+  - jekyll-gist

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Docker Image with .NET, .NET Core and Node"
+title:  "Docker Windows Image for IoT Edge"
 image: ''
 date:   2017-08-18 15:05:00
 tags:
