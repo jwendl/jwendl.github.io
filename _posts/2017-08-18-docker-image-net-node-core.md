@@ -26,8 +26,7 @@ FROM microsoft/windowsservercore
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 {% endhighlight %}
 
-The first line tells Docker to utilize the [windowsservercore](https://hub.docker.com/r/microsoft/windowsservercore/) base image. 
-The second line tells Docker to switch the command shell to PowerShell and to stop on any error messages, but continue on progress updates.
+The first line tells Docker to utilize the [windowsservercore](https://hub.docker.com/r/microsoft/windowsservercore/) base image. The second line tells Docker to switch the command shell to PowerShell and to stop on any error messages, but continue on progress updates.
 
 {% highlight docker %}
 RUN Invoke-WebRequest -Uri "https://download.microsoft.com/download/D/D/3/DD35CC25-6E9C-484B-A746-C5BE0C923290/NDP47-KB3186497-x86-x64-AllOS-ENU.exe" -OutFile NDP47-KB3186497-x86-x64-AllOS-ENU.exe
@@ -35,9 +34,7 @@ RUN .\NDP47-KB3186497-x86-x64-AllOS-ENU.exe /q
 RUN del .\NDP47-KB3186497-x86-x64-AllOS-ENU.exe
 {% endhighlight %}
 
-The first RUN command above downloads the latest version of .NET Framework 4.7 and places it to an .exe file.
-The second line runs the .exe with the '/q' or quiet flag to avoid output and installer window.
-The third RUN command removes the excess .exe after the full framework installs.
+The first RUN command above downloads the latest version of .NET Framework 4.7 and places it to an .exe file. The second line runs the .exe with the '/q' or quiet flag to avoid output and installer window. The third RUN command removes the excess .exe after the full framework installs.
 
 {% highlight docker %}
 ENV DOTNET_SDK_VERSION 1.0.4
@@ -50,11 +47,7 @@ Remove-Item -Force dotnet.zip
 RUN setx /M PATH $($Env:PATH + ';' + $Env:ProgramFiles + '\dotnet')
 {% endhighlight %}
 
-The first two lines set up environment variables for .NET Core.
-The RUN Invoke-WebRequest line downloads the .NET Core SDK.
-Expand-Archive is a PowerShell way to unzip a zip file, and we can unzip the downloaded .zip directly into program files.
-The Remove-Item command deletes the .zip file using PowerShell.
-The last RUN setx command here, sets the path environment variable globally (not just for this shell) to point to the new dotnet folder in Program Files.
+The first two lines set up environment variables for .NET Core. The RUN Invoke-WebRequest line downloads the .NET Core SDK. Expand-Archive is a PowerShell way to unzip a zip file, and we can unzip the downloaded .zip directly into program files. The Remove-Item command deletes the .zip file using PowerShell. The last RUN setx command here, sets the path environment variable globally (not just for this shell) to point to the new dotnet folder in Program Files.
 
 {% highlight docker %}
 ENV NUGET_XMLDOC_MODE skip
@@ -81,8 +74,7 @@ $env:PATH = 'C:\nodejs;{0}\npm;{1}' -f $env:APPDATA, $env:PATH ; \
 [Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine)
 {% endhighlight %}
 
-This is setting an environment variable for NODE_VERSION, then downloading that version of Node through .zip file.
-The final step then extracts those contents to C:\nodejs and deletes the .zip file.
+This is setting an environment variable for NODE_VERSION, then downloading that version of Node through .zip file. The final step then extracts those contents to C:\nodejs and deletes the .zip file.
 
 {% highlight docker %}
 RUN Invoke-WebRequest $('https://download.microsoft.com/download/3/b/f/3bf6e759-c555-4595-8973-86b7b4312927/vc_redist.x64.exe') -OutFile vcredist.exe
