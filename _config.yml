@@ -2,7 +2,7 @@
 title: Jwendl.NET | All about Code
 description: "Justin Wendlandt's blog about all things code."
 baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
-url: "https://jwendl.github.io/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+url: "https://jwendl.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 # User settings
 username: jwendl
 user_title: Justin Wendlandt - Software Development Engineer
