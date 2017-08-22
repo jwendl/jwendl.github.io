@@ -1,3 +1,4 @@
+if (d3) {
 $.ajax({
   headers: {
     "x-api-key": "kvjqf3zff1nzu6u6i6flcd1rcaq0nurxslc8d4o7",
@@ -32,3 +33,4 @@ d3.select(".visitorChart")
   .enter().append("div")
     .style("width", function(d) { return x(d) + "px"; })
     .text(function(d) { return d; });
+}
