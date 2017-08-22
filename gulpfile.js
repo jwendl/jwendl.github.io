@@ -1,6 +1,7 @@
 var gulp        = require('gulp'),
 	plumber     = require('gulp-plumber'),
 	browserSync = require('browser-sync'),
+	css			= require('gulp-css'),
 	stylus      = require('gulp-stylus'),
 	uglify      = require('gulp-uglify'),
 	concat      = require('gulp-concat'),
@@ -48,7 +49,7 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
  * Stylus task
  */
 gulp.task('stylus', function(){
-		gulp.src('src/styl/main.styl')
+	gulp.src('src/styl/main.styl')
 		.pipe(plumber())
 		.pipe(stylus({
 			use:[koutoSwiss(), prefixer(), jeet(),rupture()],
@@ -57,6 +58,29 @@ gulp.task('stylus', function(){
 		.pipe(gulp.dest('_site/assets/css/'))
 		.pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('assets/css'));
+});
+
+gulp.task('chart-stylus', function(){
+	gulp.src('chart/styl/chart.styl')
+		.pipe(plumber())
+		.pipe(stylus({
+			use:[koutoSwiss(), prefixer(), jeet(),rupture()],
+			compress: true
+		}))
+		.pipe(gulp.dest('_site/assets/css/'))
+		.pipe(browserSync.reload({stream:true}))
+	.pipe(gulp.dest('assets/css'));
+});
+
+gulp.task('deps-css', function() {
+	gulp.src('node_modules/c3/c3.css')
+		.pipe(plumber())
+		.pipe(css({
+			compress: true
+		}))
+		.pipe(gulp.dest('_site/assets/css/'))
+		.pipe(browserSync.reload({stream:true}))
+	.pipe(gulp.dest('assets/css'));
 });
 
 /**
@@ -70,6 +94,26 @@ gulp.task('js', function(){
 		.pipe(gulp.dest('assets/js/'))
 		.pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('_site/assets/js/'));
+});
+
+gulp.task('chart-js', function(){
+	return gulp.src('chart/js/**/*.js')
+		.pipe(plumber())
+		.pipe(concat('chart.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('assets/js/'))
+		.pipe(browserSync.reload({stream:true}))
+    .pipe(gulp.dest('_site/assets/js/'));
+});
+
+gulp.task('deps-js', function() {
+	return gulp.src(['node_modules/c3/c3.js', 'node_modules/d3/d3.js'])
+		.pipe(plumber())
+		.pipe(concat('deps.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('assets/js/'))
+		.pipe(browserSync.reload({stream:true}))
+	.pipe(gulp.dest('_site/assets/js/'));
 });
 
 /**
