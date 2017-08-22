@@ -49,6 +49,20 @@
               {% endfor %}
         </ul>
 
+        <ul class="recent">
+            <p>Other resources:</p>
+             <li>
+                 <a title="OPML Feed" href="{{ "/collection.opml" | prepend: site.baseurl | prepend: site.url }}">
+                     <h2 class="post-title" itemprop="name">Blog Reading List</h2>
+                 </a>
+            </li>
+            <li>
+                    <a title="Analytics" href="{{ "/analytics/" | prepend: site.baseurl | prepend: site.url }}">
+                        <h2 class="post-title" itemprop="name">Website Analytics</h2>
+                    </a>
+               </li>
+        </ul>
+
     </div>
     {% include menu-search.html %}
 </header>
