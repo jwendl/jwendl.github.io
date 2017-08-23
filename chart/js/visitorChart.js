@@ -1,21 +1,25 @@
 
 $.ajax({
-  headers: {
-    "x-api-key": "kvjqf3zff1nzu6u6i6flcd1rcaq0nurxslc8d4o7"
-  },
   type: "GET",
-  url: "https://api.applicationinsights.io/beta/apps/ae3f4ad0-da1d-4562-9039-fcbeed89c343/events/browserTimings",
+  url: "https://blogdataapplication.azurewebsites.net/api/TopPosts?code=xTpyXm4ZY85HEAdKefPJf3XksLpn61VtEGuV18efai/64hqqvyeyDw==",
+  // url: "http://localhost:7071/api/TopPosts",
   dataType: 'json',
   success: function(data, textStatus, jqXHR) {
-    var timings = data.value;
-
     var chart = c3.generate({
       bindto: '#visitorChart',
       data: {
-        columns: [
-          ['data1', 30, 200, 100, 400, 150, 250],
-          ['data2', 50, 20, 10, 40, 15, 25]
-        ]
+        json: data,
+        keys: {
+          x: 'Page',
+          value: ['UniqueVisitors']
+        },
+        type: 'bar'
+      },
+      axis: {
+        x: {
+          type: 'category'
+        },
+        rotated: true
       }
     });
   },
