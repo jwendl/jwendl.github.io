@@ -5,11 +5,26 @@ layout: blank
   <article class="{% if site.style.articles == 'stripe' %}light{% else %}{{ site.style.articles }}{% endif %}">
     <header>
       <h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
-      <span>{% if page.author %}{{ page.author }} • {% endif %}{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.categories and {{page.categories}} != empty %} • {{ page.categories | array_to_sentence_string }}{% endif %}</span>
+      <span>{% if page.author %}{{ page.author }} • {% endif %}{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.categories and {{page.categories}} != empty %} • {{ page.categories | array_to_sentence_string }}{% endif %}{% if page.tags and {{page.tags}} != empty %} • {{ page.tags | array_to_sentence_string }}{% endif %}</span>
     </header>
     <div>
 {{ content }}
     </div>
+    <section class="share">
+      <h3>Share</h3>
+      <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+        <i class="fa fa-twitter-square"></i>
+      </a>
+      <a aria-label="Share on LinkedIn" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+        <i class="fa fa-google-plus-square"></i>
+      </a>
+      <a aria-label="Share on Facebook"href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+        <i class="fa fa-facebook-square"></i>
+      </a>
+      <a aria-label="Share on Google Plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+        <i class="fa fa-google-plus-square"></i>
+      </a>
+    </section>   
     {% if site.comments.isso and page.comments %}
     <div id="isso-thread"></div>
     {% endif %}
