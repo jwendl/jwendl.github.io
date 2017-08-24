@@ -38,5 +38,5 @@ links:
 paginate: 10
 excerpt_separator: "&shy;" # excerpt ends after two blank lines
 permalink: pretty
-defaults: [{scope: {path: "*.html"}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}, {scope: {path: "images"}, values: {image: true}}, {scope: {path: "lib"}, values: {script: true}}]
+defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}, {scope: {path: "images"}, values: {image: true}}, {scope: {path: "lib"}, values: {script: true}}]
 gems: [jekyll-feed, jekyll-paginate, jekyll-gist] # include feed plugin (supported by gh-pages)
