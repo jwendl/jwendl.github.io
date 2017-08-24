@@ -1,12 +1,9 @@
 ---
-layout: post
 title:  "Using Expect with Bash"
-image: ''
 date:   2017-08-17 13:24:00
 tags:
 - bash
 - linux
-description: ''
 categories:
 - Bash 
 ---
@@ -20,7 +17,7 @@ What happens in the situation when the command asks for a prompt? It makes it di
 {% highlight bash %}
 user@pc:~$ mycommand < echo "value we want to pass"
 {% endhighlight %}
-
+&shy;
 The above example fails primarily because it's really passing the value to the input stream of the command not a prompt on the command line. One way to work around this issue is to use a library called [Expect](https://packages.ubuntu.com/search?keywords=expect). Expect can be installed on Ubuntu using apt-get.
 {% highlight bash %}
 user@pc:~$ apt-get install expect

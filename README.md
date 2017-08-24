@@ -1,73 +1,18 @@
-# My Blog Content
+# Contrast
 
-Based on a simple and elegant Jekyll theme based on Spacemacs. The theme works well on mobile devices as well.
+**Note**
 
-See the live demo [here](https://victorvoid.github.io/space-jekyll-template/).
+Create a `master`-branch if you want to use this theme as root folder on `yourname.github.io`.
 
-![](https://github.com/victorvoid/space-jekyll-template/blob/master/screenshot.png?raw=true)
+**Features**
 
-# Site/User Settings
+ - mobile first
+ - syntax highlighting
+ - [disqus](https://disqus.com/) / [isso](http://posativ.org/isso/) support
+ - style customizable
 
-customize your site in ``_config.yml``
+**Screenshot**
 
-```ruby
+![screenshot](https://cloud.githubusercontent.com/assets/4943215/9838597/ef499f66-5a61-11e5-8ad0-b2bb71383833.png)
 
-# Site settings
-description: A blog about lorem ipsum
-baseurl: "" # the subpath
-url: "" # the base hostname &/|| protocol for your site 
-
-# User settings
-username: Lorem Ipsum
-user_description: Lorem Developer
-user_title: Lorem Ipsum
-email: lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
-gplus_username:  loremipsum
-disqus_username: loremipsum
-
-```
-
-## How to create a post ? 
-
-_posts create a file .md with structure:
-
-```md
----
-layout: post
-title: "Lorem ipsum speak.."
-date: 2016-09-13 01:00:00
-image: '/assets/img/post-image.png'
-description: 'about tech'
-tags:
-- lorem
-- tech 
-categories:
-- Lorem ipsum
-twitter_text: 'How to speak with Lorem'
----
-```
-
-## License
-The MIT License (MIT)
-
-Copyright (c) 2016 Victor Igor
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Niklas Buschmann, 2014, MIT-License

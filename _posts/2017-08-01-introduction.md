@@ -1,11 +1,8 @@
 ---
-layout: post
 title:  "Hello World"
-image: ''
 date:   2017-08-01 22:12:00
 tags:
 - general
-description: ''
 categories:
 - Personal 
 ---

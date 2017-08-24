@@ -1,59 +1,36 @@
-# Site settings
-title: Jwendl.NET | All about Code
-description: "Justin Wendlandt's blog about all things code."
-baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
-url: "https://jwendl.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
-# User settings
-username: jwendl
-user_title: Justin Wendlandt - Software Development Engineer
-email: jwendl@hotmail.com
-twitter_username: jwendl
-github_username:  jwendl
-stackoverflow_username: jwendl
-gplus_username:  jwendl
-disqus_username: jwendl-net-all-about-code
-profile_picture: https://avatars2.githubusercontent.com/u/1068431?v=4&u=a3439d49b38927dfacfab6215d7094636728599d&s=400
+title: "Jwendl.NET | All about Code"
+author: "Justin Wendlandt"
+description: "Justin Wendlandt's blog about software development on Microsoft Azure"
+more: "read more »"
+url: "https://www.jwendl.net"
+# baseurl: "/contrast" # comment out if in root directory
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: /:title/
+comments:
+  disqus: "jwendl-net-all-about-code"
+#  isso: "comments.mysite.org"
 
-# html minify
-compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
+style:
+  body: 'white'
+  margin: 0%
+  padding: 30%
+  nav: "#222"
+  articles: 'stripe' # 'light' 'dark' and 'stripe' possible
+  uppercase: true
 
-# Links to include in menu navigation
+# see http://fontawesome.io/icons/#brand for all possible icons
+# notice: squared icons only work if supported by font-awesome
+
 links:
-  - title: home
-    url: /
-  - title: my posts
-    url: /posts
-  - title: series
-    url: /series
-  - title: tags
-    url: /tags
-  - title: about me
-    url: /about
+  - github: {url: "https://github.com/jwendl/", square: true}
+  - reddit: {url: "https://www.reddit.com/user/jwendl/", square: true}
+  - twitter: {url: "https://twitter.com/jwendl/", square: true}
+  - facebook: {url: "https://www.facebook.com/jwendl", square: true}
+  - google-plus: {url: "https://plus.google.com/+jwendl", square: true}
+  - youtube: {url: "https://www.youtube.com/user/jwendl", square: true}
+  - steam: {url: "http://steamcommunity.com/id/jwendl/", square: true}
 
-# projects in header index
-projects:
-  - name: Sql Server Code Analysis
-    url: https://github.com/jwendl/SqlServerCodeAnalysis
-
-# exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
-
-# What GitHub uses...
-kramdown:
-  input: GFM
-  hard_wrap: false
-plugins:
-  - jekyll-coffeescript
-  - jekyll-gist
-whitelist:
-  - jekyll-coffeescript
-  - jekyll-gist
+paginate: 10
+excerpt_separator: "&shy;" # excerpt ends after two blank lines
+permalink: pretty
+defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}, {scope: {path: "images"}, values: {image: true}}, {scope: {path: "lib"}, values: {script: true}}]
+gems: [jekyll-feed, jekyll-paginate, jekyll-gist] # include feed plugin (supported by gh-pages)

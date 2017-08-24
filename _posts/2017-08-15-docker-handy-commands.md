@@ -1,7 +1,5 @@
 ---
-layout: post
 title:  "Handy Docker Commands"
-image: ''
 date:   2017-08-15 13:39:00
 tags:
 - docker
@@ -9,18 +7,19 @@ tags:
 - commands
 - bash
 - linux
-description: ''
 categories:
 - Docker 
 ---
 
 Docker has been involved in the majority of the projects I have helped out with in the past few weeks. The inspiration of this post comes mainly from several folks who ask similar questions about performing generic development tasks with Docker (and more specifically hosting an ASP.NET Core on a Docker container)
-
+&shy;
 The first thing for me was installation. Since WSL (Windows Subsystem for Linux) has been released, I have used that command line as my primary way of using anything with the command prompt. The steps I took to install Docker on my machine were:
 
 * Install [Docker for Windows](https://docs.docker.com/docker-for-windows/install/).
 * Configure Docker for Windows with setting up the proxy port access.
-![Docker for Windows Settings](/assets/img/docker-settings.png)
+
+![Docker for Windows Settings](/images/docker-settings.png)
+
 * Install docker on your Bash instance.
 {% highlight bash %}
 wget -qO- https://get.docker.com/ | sh
