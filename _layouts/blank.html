@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta charset="{{ site.encoding }}" />
-<meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}" />
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-<title>{% if page.title %} {{ page.title }} › {% endif %}{{ site.title }}</title>
-<link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url}}" />
-<link href="//opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet" />
-<link href="{{ '/basic.css' | prepend: site.baseurl }}" rel="stylesheet" />
-<link href="{{ '/highlight.css' | prepend: site.baseurl }}" rel="stylesheet" />
-<link href="{{ '/index.css' | prepend: site.baseurl }}" rel="stylesheet" />
-{% if page.graphs %}
-<link href="{{ '/lib/css/c3.min.css' | prepend: site.baseurl }}" rel="stylesheet" />
-<link href="{{ '/lib/css/chart.css' | prepend: site.baseurl }}" rel="stylesheet" />
-<script type="text/javascript" src="{{ '/lib/js/jquery.min.js' | prepend: site.baseurl }}"></script>
-<script type="text/javascript" src="{{ '/lib/js/c3.min.js' | prepend: site.baseurl }}"></script>
-<script type="text/javascript" src="{{ '/lib/js/d3.min.js' | prepend: site.baseurl }}"></script>
-<script type="text/javascript" src="{{ '/lib/js/visitorChart.js' | prepend: site.baseurl }}"></script>
-{% endif %}
-{% feed_meta %}
-{% if site.comments.disqus and page.comments %}<script src="//{{ site.comments.disqus }}.disqus.com/embed.js" async></script>{% endif %}
-{% if site.comments.isso and page.comments %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="{{ site.encoding }}" />
+  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}" />
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <title>{% if page.title %} {{ page.title }} › {% endif %}{{ site.title }}</title>
+  <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url}}" />
+  <link href="//opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet" />
+  <link href="{{ '/basic.css' | prepend: site.baseurl }}" rel="stylesheet" />
+  <link href="{{ '/highlight.css' | prepend: site.baseurl }}" rel="stylesheet" />
+  <link href="{{ '/index.css' | prepend: site.baseurl }}" rel="stylesheet" />
+  {% if page.graphs %}
+  <link href="{{ '/lib/css/c3.min.css' | prepend: site.baseurl }}" rel="stylesheet" />
+  <link href="{{ '/lib/css/chart.css' | prepend: site.baseurl }}" rel="stylesheet" />
+  <script type="text/javascript" src="{{ '/lib/js/jquery.min.js' | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ '/lib/js/c3.min.js' | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ '/lib/js/d3.min.js' | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ '/lib/js/visitorChart.js' | prepend: site.baseurl }}"></script>
+  {% endif %}
+  {% feed_meta %}
+  {% if site.comments.disqus and page.comments %}<script src="//{{ site.comments.disqus }}.disqus.com/embed.js" async></script>{% endif %}
+  {% if site.comments.isso and page.comments %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
+  <script type="text/javascript">var appInsights=window.appInsights||function(config){function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t}({instrumentationKey:"d13c1f06-98bb-45e2-bd17-e023b959129f"});window.appInsights=appInsights;appInsights.trackPageView();</script>
 </head>
 <body>
 <header>

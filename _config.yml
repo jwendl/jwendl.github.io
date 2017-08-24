@@ -2,7 +2,7 @@ title: "Jwendl.NET | All about Code"
 author: "Justin Wendlandt"
 description: "Justin Wendlandt's blog about software development on Microsoft Azure"
 more: "read more »"
-url: "https://www.jwendl.net"
+url: "http://www.jwendl.net"
 # baseurl: "/contrast" # comment out if in root directory
 
 twitter_username: jwendl
@@ -31,6 +31,7 @@ links:
   - twitter: {url: "https://twitter.com/jwendl/", square: true}
   - facebook: {url: "https://www.facebook.com/jwendl", square: true}
   - linkedin: {url: "https://www.linkedin.com/in/jwendl/", square: true}
+  - stack-overflow: { url: "https://stackoverflow.com/users/49415/jwendl", square: true}
   - google-plus: {url: "https://plus.google.com/+jwendl", square: true}
   - youtube: {url: "https://www.youtube.com/user/jwendl", square: true}
   - steam: {url: "http://steamcommunity.com/id/jwendl/", square: true}
