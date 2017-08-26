@@ -1,8 +1,13 @@
-#visitorChart div {
-    font: 10px sans-serif;
-    background-color: steelblue;
-    text-align: left;
-    padding: 3px;
-    margin: 1px;
-    color: white;
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
 }

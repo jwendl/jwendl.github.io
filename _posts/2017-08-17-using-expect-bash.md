@@ -4,8 +4,6 @@ date:   2017-08-17 13:24:00
 tags:
 - bash
 - linux
-categories:
-- Bash 
 ---
 
 Most command line applications in Linux use parameters to take arguments in, similar to the following example.

@@ -7,8 +7,6 @@ tags:
 - commands
 - bash
 - linux
-categories:
-- Docker 
 ---
 
 Docker has been involved in the majority of the projects I have helped out with in the past few weeks. The inspiration of this post comes mainly from several folks who ask similar questions about performing generic development tasks with Docker (and more specifically hosting an ASP.NET Core on a Docker container)
