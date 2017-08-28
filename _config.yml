@@ -32,8 +32,8 @@ links:
   - facebook: {url: "https://www.facebook.com/jwendl", square: true}
   - linkedin: {url: "https://www.linkedin.com/in/jwendl/", square: true}
   - stack-overflow: { url: "https://stackoverflow.com/users/49415/jwendl", square: true}
-  - google-plus: {url: "https://plus.google.com/+jwendl", square: true}
-  - youtube: {url: "https://www.youtube.com/user/jwendl", square: true}
+  - google-plus: {url: "https://plus.google.com/+JustinWendlandt", square: true}
+  - youtube: {url: "https://www.youtube.com/user/MrJwendlandt", square: true}
   - steam: {url: "http://steamcommunity.com/id/jwendl/", square: true}
 
 paginate: 10
