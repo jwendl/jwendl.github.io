@@ -11,6 +11,7 @@ tags:
 
 Docker has been involved in the majority of the projects I have helped out with in the past few weeks. The inspiration of this post comes mainly from several folks who ask similar questions about performing generic development tasks with Docker (and more specifically hosting an ASP.NET Core on a Docker container)
 &shy;
+
 The first thing for me was installation. Since WSL (Windows Subsystem for Linux) has been released, I have used that command line as my primary way of using anything with the command prompt. The steps I took to install Docker on my machine were:
 
 * Install [Docker for Windows](https://docs.docker.com/docker-for-windows/install/).
