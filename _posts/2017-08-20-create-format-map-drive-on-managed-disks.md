@@ -1,5 +1,5 @@
 ---
-title:  "Working with Windows Containers"
+title:  "Create and Format a Disk in a Windows Container"
 date:   2017-08-20 22:12:00
 tags:
 - windows
