@@ -10,9 +10,11 @@ One situation we ran into was figuring out how to store files to be shared acros
 &shy;
 
 Creating an Azure File Share is fairly simple. First create the Azure Storage Account using the information below.
+
 ![Storage Account Steps](/images/StorageAccount.png)
 
 Then the next step is to go and create a new file share.
+
 ![File Share Steps](/images/FileService.png)
 
 From that point we will the command net use to setup the share to a physical drive letter.
