@@ -1,5 +1,5 @@
 ---
-title:  "Azure File Share and mklinnk"
+title:  "Azure File Share and mklink"
 date:   2017-09-14 17:54:00
 tags:
 - dos
