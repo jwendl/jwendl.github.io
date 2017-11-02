@@ -22,3 +22,5 @@ Node
 IoT
 
 Service Fabric
+
+[Go Here](/analytics) to see site statistics.

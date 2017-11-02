@@ -10,9 +10,9 @@ tags:
  - docker
  - service fabric
 ---
+# Service Fabric with Windows Containers
 
-If you are interested in running service fabric with Windows containers there are a few things to consider while the functionality is in public preview. 
-&shy;
+If you are interested in running service fabric with Windows containers there are a few things to consider while the functionality is in public preview.
 
 First, when you spin up the service fabric cluster it needs some additional settings in order to build the Virtual Machine scale set properly.
 

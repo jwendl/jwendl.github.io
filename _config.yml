@@ -2,7 +2,7 @@
 title: Justin Wendlandt's Blog
 description: Application Development on Azure
 url: https://www.jwendl.net/
-logo: halve.png                                       # Site logo
+logo: profile.jpg                                       # Site logo
 locale: en_US
 
 # Left Block Images
@@ -59,10 +59,10 @@ youtube:            Justin.Wendlandt
 #behance:           username
 
 # Gems
-gems:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
+plugins:
+ - jekyll-feed
+ - jekyll-sitemap
+ - jekyll-gist
 
 # Exclude list
 include: [_pages]

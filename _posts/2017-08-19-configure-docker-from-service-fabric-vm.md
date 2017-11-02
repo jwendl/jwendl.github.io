@@ -10,11 +10,11 @@ tags:
  - docker
  - service fabric
 ---
+# Configuring Docker Inside a Service Fabric VM
 
 If there are ever any settings that need to be changed inside the Docker service that is running inside a Virtual Machine under Service Fabric the only way to accomplish this is through an Azure Resource Manager Virtual Machine Extension.
-&shy;
 
-{% highlight json %}
+``` json
         "virtualMachineProfile": {
           "extensionProfile": {
             "extensions": [
@@ -34,11 +34,11 @@ If there are ever any settings that need to be changed inside the Docker service
               }
             ]
           },
-{% endhighlight %}
+```
 
 We can put the following code into the configdocker.ps1 file.
 
-{% highlight powershell %}
+``` powershell
 New-Item -Path "F:\Docker" -Type Directory
 Set-Content "C:\ProgramData\docker\config\daemon.json" '{"graph": "F:\\Docker"}'
 Stop-Process -ProcessName dockerd -Force
@@ -47,11 +47,11 @@ Remove-Item -Path "C:\ProgramData\docker\docker.pid"
 Start-Sleep -s 1
 Start-Service -DisplayName "Docker"
 Start-Sleep -s 1
-{% endhighlight %}
+```
 
-Essentially, we are going to tell it to use the F:\ data disk drive for docker images rather than the C:\ drive (this might be for performance or other reasons). 
+Essentially, we are going to tell it to use the F:\ data disk drive for docker images rather than the C:\ drive (this might be for performance or other reasons).
 
-The first line creates a new docker folder. 
+The first line creates a new docker folder.
 
 The Set-Content line creates a new file with the json configuration in it per the [Docker website](https://docs.docker.com/engine/admin/systemd/#runtime-directory-and-storage-driver).
 

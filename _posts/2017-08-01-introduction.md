@@ -7,18 +7,21 @@ categories:
 tags:
  - general
 ---
+# Hello World
 
 This is just a test page to make sure all of my blogging features are enabled. Keep an eye to this blog for more tips and tricks on Azure PaaS, .NET Core, Visual Studio Extensibility and Containers!
 
-#### C\#
-{% highlight C# %}
+## C\#
+
+``` csharp
 public static void Main(string[] args)
 {
     Console.WriteLine("Hello World!");
 }
-{% endhighlight %}
+```
 
-#### Python
-{% highlight python %}
+## Python
+
+``` python
 print("Hello World!")
-{% endhighlight %}
+```
