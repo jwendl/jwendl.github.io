@@ -1,11 +1,14 @@
 ---
+layout: post
 title:  "Service Fabric with Windows Containers"
 date:   2017-08-21 22:12:00
+categories:
+ - Docker
 tags:
-- windows
-- containers
-- docker
-- service fabric
+ - windows
+ - containers
+ - docker
+ - service fabric
 ---
 
 If you are interested in running service fabric with Windows containers there are a few things to consider while the functionality is in public preview. 

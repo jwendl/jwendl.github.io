@@ -1,9 +1,12 @@
 ---
+layout: post
 title:  "Useful Visual Studio Extensions"
 date:   2017-10-01 16:15:00
+categories:
+ - Visual Studio
 tags:
-- extensibility
-- visual studio
+ - extensibility
+ - visual studio
 ---
 
 Visual Studio is currently my favorite development environment. The ability to extend and build out extra functionality such as code analysis and code formatting in my opinion makes me a lot more productive while building larger solutions.

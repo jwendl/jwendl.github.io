@@ -1,0 +1,13 @@
+---
+layout: page
+title: "Analytics"
+graphs: "true"
+permalink: /analytics.html
+graphs: "true"
+---
+
+<h2>Top 10 Posts</h2>
+<div id="visitorChart"></div>
+<h2>Requests per Hour</h2>
+<div id="requestsChart"></div>
+<small>Data is collected for only 90 days</small>

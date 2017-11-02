@@ -1,18 +1,25 @@
-# Contrast
+# Halve  [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
+  
+## `Sorry guys but there will be no update until I buy a new laptop.`
 
-**Note**
+This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
 
-Create a `master`-branch if you want to use this theme as root folder on `yourname.github.io`.
+To learn how to install and use this theme check out the [installation guide](https://taylantatli.github.io/Halve/halve-theme/) for more information.
 
-**Features**
+If you have a question, find a bug, or just want to say hi, please open an [issue on GitHub](https://github.com/TaylanTatli/Halve/issues/new).
 
- - mobile first
- - syntax highlighting
- - [disqus](https://disqus.com/) / [isso](http://posativ.org/isso/) support
- - style customizable
+## Preview   
+![screenshot of Halve](/images/halve-home-image.png)
 
-**Screenshot**
+See a [live version of Halve](http://taylantatli.github.io/Halve) hosted on GitHub.
 
-![screenshot](https://cloud.githubusercontent.com/assets/4943215/9838597/ef499f66-5a61-11e5-8ad0-b2bb71383833.png)
+# Credits
+- Original Work: [Vangelis Tzortzis](https://github.com/srekoble)  
+- Sample Posts and some code examples: [Michael Rose](https://github.com/mmistakes/)
+- Images: [Unsplash](https://unsplash.com/) and [Lorem Pixel](http://lorempixel.com)
 
-Niklas Buschmann, 2014, MIT-License
+### Others
+- [Jekyll](http://jekyllrb.com/)
+- [jQuery](http://jquery.com/)
+- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
+- [FitVids.JS](http://fitvidsjs.com/)

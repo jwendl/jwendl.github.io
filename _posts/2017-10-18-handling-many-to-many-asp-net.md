@@ -1,9 +1,12 @@
 ---
+layout: post
 title:  "Handling Many to Many Updates in ASP.NET Core"
 date:   2017-10-18 12:44:00
+categories:
+ - ASP.NET Core
 tags:
-- asp.net
-- linq
+ - asp.net
+ - linq
 ---
 
 When updating a database object using Entity Framework Core and ASP.NET Core there is a decent amount of complexity involved with handling what's in the database and what is selected from the UI.

@@ -1,9 +1,12 @@
 ---
+layout: post
 title:  "Create and Format a Disk in a Windows Container"
 date:   2017-08-20 22:12:00
+categories:
+ - Docker
 tags:
-- windows
-- containers
+ - windows
+ - containers
 ---
 
 If you find yourself working with Windows Containers, there might be a need to utilize data drives etc from Managed Disks.

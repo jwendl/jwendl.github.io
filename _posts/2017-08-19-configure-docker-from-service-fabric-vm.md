@@ -1,11 +1,14 @@
 ---
+layout: post
 title:  "Configuring Docker Inside a Service Fabric VM"
 date:   2017-08-19 22:12:00
+categories:
+ - Docker
 tags:
-- windows
-- containers
-- docker
-- service fabric
+ - windows
+ - containers
+ - docker
+ - service fabric
 ---
 
 If there are ever any settings that need to be changed inside the Docker service that is running inside a Virtual Machine under Service Fabric the only way to accomplish this is through an Azure Resource Manager Virtual Machine Extension.

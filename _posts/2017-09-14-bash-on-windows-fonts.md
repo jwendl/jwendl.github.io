@@ -1,9 +1,12 @@
 ---
+layout: post
 title:  "Bash on Windows Font Issues"
 date:   2017-09-14 11:06:00
+categories:
+ - Linux
 tags:
-- wsl
-- bash on windows
+ - wsl
+ - bash on windows
 ---
 
 When I started the bash on windows command prompt this morning the font and scaling looked incredibly odd.

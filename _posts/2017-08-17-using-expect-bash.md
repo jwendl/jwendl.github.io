@@ -1,9 +1,12 @@
 ---
+layout: post
 title:  "Using Expect with Bash"
 date:   2017-08-17 13:24:00
+categories:
+ - Linux
 tags:
-- bash
-- linux
+ - bash
+ - linux
 ---
 
 Most command line applications in Linux use parameters to take arguments in, similar to the following example.

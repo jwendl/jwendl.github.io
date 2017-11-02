@@ -1,43 +1,69 @@
-title: "Jwendl.NET | All about Code"
-author: "Justin Wendlandt"
-description: "Justin Wendlandt's blog about software development on Microsoft Azure"
-more: "read more »"
-url: "http://www.jwendl.net"
-# baseurl: "/contrast" # comment out if in root directory
+# Site
+title: Justin Wendlandt's Blog
+description: Application Development on Azure
+url: https://www.jwendl.net/
+logo: halve.png                                       # Site logo
+locale: en_US
 
-twitter_username: jwendl
-github_username:  jwendl
-stackoverflow_username: jwendl
-gplus_username:  jwendl
+# Left Block Images
+background:
+  homepage: images/home.png                           # this image will be shown on homepage's left block
+  post-list: images/unsplash-image-10.jpg             # this image will be shown on post list page
+  default-post: images/unsplash-gallery-image-3.jpg   # this image will be shown when post's front matter doesn't specify any image
+
+# Jekyll
+# permalink:          /:title/
+permalink:          /:year/:month/:day/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+sass:
+  sass_dir:         assets/_sass
+  style:            compressed
 
 comments:
   disqus: "jwendl-net-all-about-code"
-#  isso: "comments.mysite.org"
 
-style:
-  body: 'white'
-  margin: 0%
-  padding: 30%
-  nav: "#222"
-  articles: 'stripe' # 'light' 'dark' and 'stripe' possible
-  uppercase: true
+# Google Analytics
+#google-analytics: UA-XXXXX-Y
 
-# see http://fontawesome.io/icons/#brand for all possible icons
-# notice: squared icons only work if supported by font-awesome
+# Social Links
+#email:             email
+google.plus:        jwendl
+twitter:            jwendl
+facebook:           jwendl
+github:             jwendl
+stackoverflow:      49415/jwendl
+linkedin:           jwendl
+#xing:              username
+#instagram:          username
+#lastfm:            username
+#tumblr:            username
+#pinterest:         username
+#foursquare:        username
+steam:              jwendl
+#dribbble:          username
+youtube:            Justin.Wendlandt
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
+#behance:           username
 
-links:
-  - github: {url: "https://github.com/jwendl/", square: true}
-  - reddit: {url: "https://www.reddit.com/user/jwendl/", square: true}
-  - twitter: {url: "https://twitter.com/jwendl/", square: true}
-  - facebook: {url: "https://www.facebook.com/jwendl", square: true}
-  - linkedin: {url: "https://www.linkedin.com/in/jwendl/", square: true}
-  - stack-overflow: { url: "https://stackoverflow.com/users/49415/jwendl", square: false}
-  - google-plus: {url: "https://plus.google.com/+JustinWendlandt", square: true}
-  - youtube: {url: "https://www.youtube.com/user/MrJwendlandt", square: true}
-  - steam: {url: "http://steamcommunity.com/id/jwendl/", square: true}
+# Gems
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
 
-paginate: 10
-excerpt_separator: "&shy;" # excerpt ends after two blank lines
-permalink: pretty
-defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}, {scope: {path: "images"}, values: {image: true}}, {scope: {path: "lib"}, values: {script: true}}]
-gems: [jekyll-feed, jekyll-paginate, jekyll-gist] # include feed plugin (supported by gh-pages)
+# Exclude list
+include: [_pages]
+exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]

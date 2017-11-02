@@ -1,9 +1,12 @@
 ---
+layout: post
 title:  "IoT Simulator Deployment Scenario"
 date:   2017-08-16 13:39:00
+categories:
+ - IoT
 tags:
-- iot
-- simulator
+ - iot
+ - simulator
 ---
 
 The goal of this Azure Resource Manager template is to build a place where anyone who is interested in simulating load on Azure IoT Hubs utilizing their own data is possible. This is done by creating an environment where containers that have the application specific code can be replicated at scale and allow semi-realistic data to flow through the IoT Hub and eventually on to any endpoints specified in the IoT Hub.
