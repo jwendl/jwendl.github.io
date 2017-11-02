@@ -7,20 +7,13 @@ Justin Wendlandt is a Senior Software Development Engineer at [Microsoft](https:
 
 Considered a knowledgable [Hacker](https://en.wikipedia.org/wiki/Hacker_culture) and well versed on the following topics.
 
-Azure Platform as a Service
-
-Azure Serverless
-
-C#
-
-.NET Core
-
-.NET Framework
-
-Node
-
-IoT
-
-Service Fabric
+* Azure Platform as a Service
+* Azure Serverless
+* C#
+* .NET Core
+* .NET Framework
+* Node
+* IoT
+* Service Fabric
 
 [Go Here](/analytics) to see site statistics.

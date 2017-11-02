@@ -325,6 +325,24 @@ canvas {
     margin: 10px 0;
     padding-top: 25px;
   }
+}
+
+.main-info {
+  color: $white;
+  h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 30px;
+    margin: 10px 0;
+    padding-top: 25px;
+    &:after {
+      display: none;
+    }
+  }
   ul {
     font-size: 1em;
     margin-top: 30px;
@@ -383,24 +401,6 @@ canvas {
         padding: 0.3em 0.35em;
         color: $white;
       }
-    }
-  }
-}
-
-.main-info {
-  color: $white;
-  h1 {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  h2 {
-    font-size: 21px;
-    line-height: 30px;
-    margin: 10px 0;
-    padding-top: 25px;
-    &:after {
-      display: none;
     }
   }
 }

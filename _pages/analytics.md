@@ -5,9 +5,14 @@ graphs: "true"
 permalink: /analytics.html
 graphs: "true"
 ---
+# Site Analytics
 
-<h2>Top 10 Posts</h2>
+## Top 10 Posts
+
 <div id="visitorChart"></div>
-<h2>Requests per Hour</h2>
+
+## Requests per Hour
+
 <div id="requestsChart"></div>
-<small>Data is collected for only 90 days</small>
+
+### Data is collected for only 90 days

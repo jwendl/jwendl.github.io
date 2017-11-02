@@ -93,6 +93,14 @@
       border-color: mix($white, #dc4e41, 25%);
     }
   }
+  &_linkedin {
+    background-color: #0077B5;
+    color: $white !important;
+    &:hover {
+      background-color: mix($white, #0077B5, 25%);
+      border-color: mix($white, #0077B5, 25%);
+    }
+  }  
   &_twitter {
     background-color: #55acee;
     color: $white !important;
