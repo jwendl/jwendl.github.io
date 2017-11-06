@@ -8,8 +8,6 @@ tags:
  - windows
  - containers
 ---
-# Create and Format a Disk in a Windows Container
-
 If you find yourself working with Windows Containers, there might be a need to utilize data drives etc from Managed Disks.
 
 In order to support this, we can leverage PowerShell to run a few management tasks from an Azure Resource Management template.

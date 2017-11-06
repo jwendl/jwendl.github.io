@@ -8,8 +8,6 @@ tags:
  - bash
  - linux
 ---
-# Using Expect with Bash
-
 Most command line applications in Linux use parameters to take arguments in, similar to the following example.
 
 ``` bash

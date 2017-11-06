@@ -10,8 +10,6 @@ tags:
  - docker
  - service fabric
 ---
-# Configuring Docker Inside a Service Fabric VM
-
 If there are ever any settings that need to be changed inside the Docker service that is running inside a Virtual Machine under Service Fabric the only way to accomplish this is through an Azure Resource Manager Virtual Machine Extension.
 
 ``` json

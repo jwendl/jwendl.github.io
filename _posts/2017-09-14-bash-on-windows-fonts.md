@@ -8,8 +8,6 @@ tags:
  - wsl
  - bash on windows
 ---
-# Bash on Windows Font Issues
-
 When I started the bash on windows command prompt this morning the font and scaling looked incredibly odd.
 
 ![Bash on Winndows Bad Font](/images/BashOnWindowsBadFontSetting.png)

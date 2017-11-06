@@ -8,8 +8,6 @@ tags:
  - iot
  - simulator
 ---
-# IoT Simulator Deployment Scenario
-
 The goal of this Azure Resource Manager template is to build a place where anyone who is interested in simulating load on Azure IoT Hubs utilizing their own data is possible. This is done by creating an environment where containers that have the application specific code can be replicated at scale and allow semi-realistic data to flow through the IoT Hub and eventually on to any endpoints specified in the IoT Hub.
 
 This Azure Resource Manager template builds out an Azure Service Fabric cluster with an accompanying Azure IoT Hub that has example hubs and routes. The Azure Service Fabric cluster has a Virtual Machine Scale Set with Windows server hosts that can support Windows Containers (2016-Datacenter-with-containers image sku). 

@@ -8,8 +8,6 @@ tags:
  - asp.net
  - linq
 ---
-# Handling Many to Many Updates in ASP.NET Core
-
 When updating a database object using Entity Framework Core and ASP.NET Core there is a decent amount of complexity involved with handling what's in the database and what is selected from the UI.
 
 ## Scenario

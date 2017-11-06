@@ -11,8 +11,6 @@ tags:
  - .net core
  - node
 ---
-# Docker Windows Image for IoT Edge
-
 We were in a scenario where we wanted to enable [IoT Edge](https://github.com/azure/iot-edge) to run on a Windows Server Core docker container so that we could run some scenarios. We couldn't find a good way of doing this all in one Dockerfile, but found a way to merge a few Dockerfiles into one.
 
 The gist of the cleaned up result is below:

@@ -8,8 +8,6 @@ tags:
  - extensibility
  - visual studio
 ---
-# Useful Visual Studio Extensions
-
 Visual Studio is currently my favorite development environment. The ability to extend and build out extra functionality such as code analysis and code formatting in my opinion makes me a lot more productive while building larger solutions.
 
 ## Unifying Code

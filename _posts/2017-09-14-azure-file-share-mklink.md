@@ -8,8 +8,6 @@ tags:
  - dos
  - docker
 ---
-# Azure File Share and mklink
-
 One situation we ran into was figuring out how to store files to be shared across multiple virtual machines inside docker containers on an Azure VM. To solve for this problem, we created an Azure File Share and mounted it using net use. Then we used mklink to point a folder in the container to the file share.
 
 Creating an Azure File Share is fairly simple. First create the Azure Storage Account using the information below.

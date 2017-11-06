@@ -16,4 +16,6 @@ Considered a knowledgable [Hacker](https://en.wikipedia.org/wiki/Hacker_culture)
 * IoT
 * Service Fabric
 
-[Go Here](/analytics) to see site statistics.
+Check out my [development notes](https://www.jwendl.net/code-notes/docs/home/)
+
+I do track [site statistics](/analytics) so I know which posts are the most popular using [Application Insights](https://azure.microsoft.com/en-us/services/application-insights/)

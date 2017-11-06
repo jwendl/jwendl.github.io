@@ -9,8 +9,6 @@ tags:
  - arm
  - template
 ---
-# Creating Managed Disks from Template
-
 Most of the templates on the [Azure Quick Start](https://github.com/Azure/azure-quickstart-templates) GitHub repository are using storage accounts rather than managed disks at the moment (including the Service Fabric cluster one). Here is what you would need to change in order to move over to managed disks instead of regular storage accounts.
 
 First, we would want to remove any references to the storage account(s) so that we can clean up properties that are not needed for Storage Accounts.

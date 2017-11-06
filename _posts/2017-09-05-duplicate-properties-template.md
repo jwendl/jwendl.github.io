@@ -8,8 +8,6 @@ tags:
  - azure
  - arm template
 ---
-# Duplicate Properties in Arm Templates
-
 When troubleshooting an Azure Resource Manager template, be sure to validate that there are not duplicate properties that exist in the parameters.json file.
 
 We were building an IoT Hub template for quick deployment in multiple regions on Azure. In the template, we wanted to add a "routing" property to the json to create endpoints and routes for the IoT Hub.
