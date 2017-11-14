@@ -64,6 +64,6 @@ and
             {
 ```
 
-The full example is available at [GitHub](https://github.com/Azure/azure-quickstart-templates)
+The full example is available at [GitHub](https://github.com/jwendl/azure-iot-with-endpoints)
 
 **Note**: if you have multiple properties (for instance "routing") in your Azure Resource Manager template, it will use the last property declared as what is deployed out to Azure.
