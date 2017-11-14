@@ -15,7 +15,7 @@ One important difference between Azure Resource Management templates (ARM Templa
 To install Terraform using the Windows Subsystem for Linux just use the following commands.
 
 ``` bash
-wget https://releases.hashicorp.com/terraform/0.10.8/terraform_0.10.8_linux_amd64.zip?_ga=2.122096331.1762544404.1509907251-1265081840.1498085730 -O terraform.zip
+wget https://releases.hashicorp.com/terraform/0.10.8/terraform_0.10.8_linux_amd64.zip -O terraform.zip
 unzip terraform.zip
 chmod 700 terraform
 sudo mv terraform /usr/local/bin/terraform
@@ -25,7 +25,7 @@ Terraform uses a language called Hashicorp Configuration Language - [HCL](https:
 
 For instance, if we wanted to create an Azure Container Instance service, we could place the following code inside a file named main.tf
 
-```  hcl
+``` json
 resource "azurerm_resource_group" "aci-rg" {
   name     = "aci-test"
   location = "west us"
