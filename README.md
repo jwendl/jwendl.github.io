@@ -3,6 +3,8 @@ This is my technical blog and the documents that update it. Feel free to make a 
 
 It's based on the [Halve](https://github.com/TaylanTatli/Halve) theme for [Jekyll](https://jekyllrb.com/) feel free to [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd).
 
+Uses [Commentit](https://commentit.io/) for comments.
+
 ## More Information on Halve
 This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
 
