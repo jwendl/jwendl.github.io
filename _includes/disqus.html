@@ -1,7 +1,0 @@
-{% if site.comments.disqus %}
-<div id="page_uri" value="{{ page.url | prepend: site.baseurl }}" style="display: none;">&nbsp;</div>
-<div id="page_title" value="{{ page.title }}" style="display: none;">&nbsp;</div>
-<div id="disqus_thread"></div>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<script type="text/javascript" src="{{ '/assets/js/disqus.js' | prepend: site.baseurl }}"></script>
-{% endif %}

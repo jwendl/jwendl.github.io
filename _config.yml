@@ -22,12 +22,12 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
+  input:            GFM
+  syntax_highlighter: 
+                    rouge
 sass:
   sass_dir:         assets/_sass
   style:            compressed
-
-comments:
-  disqus: "jwendl-net-all-about-code"
 
 # Google Analytics
 #google-analytics: UA-XXXXX-Y
