@@ -435,6 +435,16 @@ canvas {
   a:visited {
     color: #399f62;
   }
+  table {
+    border: none;
+    width: auto;
+    tr, td {
+      border-bottom: none;
+    }
+    td {
+      border-right: none;
+    }
+  }  
   p {
     color: darken($white, 40);
     font-size: larger;
@@ -443,9 +453,6 @@ canvas {
     line-height: 24px;
     &:first-of-type {
       padding-top: 35px;
-    }
-    table {
-      border: none;
     }
   }
 }
