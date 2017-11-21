@@ -435,7 +435,12 @@ canvas {
   a:visited {
     color: #399f62;
   }
-p {
+  img {
+    a {
+      border-bottom: none;
+    }
+  }
+  p {
     color: darken($white, 40);
     font-size: larger;
     margin: 10px 0;
