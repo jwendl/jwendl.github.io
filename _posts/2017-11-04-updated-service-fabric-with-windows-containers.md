@@ -16,11 +16,11 @@ First, when you spin up the service fabric cluster it needs some additional sett
 
 When creating the cluster, we need to set the operating system to WindowsServer-2016-Datacenter-with-Containers. This enables the virtual machines in the virtual machine scale set to have the right operating system setup to allow support for containers inside a virtualized environment.
 
-![Cluster Screen #001](/images/UpdatedClusterScreen-001.png)
+![Cluster Screen #001](/images/posts/UpdatedClusterScreen-001.png)
 
 The next two settings that need to be set are on step #2 where we are configuring the cluster configuration. Here we need to select "Show optional settings".
 
-![Cluster Screen #002](/images/UpdatedClusterScreen-002.png)
+![Cluster Screen #002](/images/posts/UpdatedClusterScreen-002.png)
 
 Then on the optional settings screen, we need to ensure that "include DNS service" is selected and that the Fabric version is set to "Automatic". The first setting enables the ability for containers to see each other as Windows requires DNS services in order for host names to be assigned to them. Docker will not do this for a Windows container. 
 

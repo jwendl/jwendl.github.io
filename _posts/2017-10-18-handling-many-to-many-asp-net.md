@@ -19,7 +19,7 @@ One approach could be to call .Clear() on the collection and then call .Update(p
 ## The "Merge" Method
 Merging is a bit tricky, but for us LINQ comes to the rescue. We can use something like [LINQPad](http://www.linqpad.net/) to mock this up. Essentially, we will switch the Language header on LINQPad to "Statement(s)" like the screenshot below.
 
-![LINQPad Expression](/images/LinqPadExpression.png)
+![LINQPad Expression](/images/posts/LinqPadExpression.png)
 
 Then inside the query editor window we can use the following snippet.
 
@@ -36,4 +36,4 @@ The second line uses database.Except() which takes the database items and create
 
 The output would look like the following screenshot.
 
-![Cluster Screen #001](/images/LinqPadExpressionResults.png)
+![Cluster Screen #001](/images/posts/LinqPadExpressionResults.png)

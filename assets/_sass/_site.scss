@@ -425,7 +425,17 @@ canvas {
       width: 250px;
     }
   }
-  p {
+  a {
+    color: #399f62;
+    border-bottom: 1px dotted $green;
+  }
+  a:hover,
+  a:active,
+  a:focus,
+  a:visited {
+    color: #399f62;
+  }
+p {
     color: darken($white, 40);
     font-size: larger;
     margin: 10px 0;

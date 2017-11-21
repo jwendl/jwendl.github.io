@@ -18,7 +18,7 @@ The first thing for me was installation. Since WSL (Windows Subsystem for Linux)
 * Install [Docker for Windows](https://docs.docker.com/docker-for-windows/install/).
 * Configure Docker for Windows with setting up the proxy port access.
 
-![Docker for Windows Settings](/images/docker-settings.png)
+![Docker for Windows Settings](/images/posts/docker-settings.png)
 
 * Install docker on your Bash instance.
 

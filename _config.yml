@@ -1,6 +1,6 @@
 # Site
 title: Justin Wendlandt's Blog
-description: Application Development on Azure
+description: Application Development using Azure
 url: https://www.jwendl.net
 logo: profile.jpg                                       # Site logo
 locale: en_US
@@ -35,7 +35,7 @@ application-insights: e1a8a4aa-7483-4061-8861-487cefe367d0
 
 # Social Links
 email:              jwendl@hotmail.com
-google.plus:        jwendl
+#google.plus:        jwendl
 twitter:            jwendl
 facebook:           jwendl
 github:             jwendl
@@ -64,7 +64,7 @@ gems:
  - jekyll-feed
  - jekyll-sitemap
  - jekyll-gist
-
+ 
 # Exclude list
 include: [_pages]
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
