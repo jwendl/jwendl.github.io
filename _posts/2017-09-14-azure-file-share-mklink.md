@@ -20,13 +20,13 @@ Then the next step is to go and create a new file share.
 
 From that point we will the command net use to setup the share to a physical drive letter.
 
-``` sh
+``` powershell
 net use F: \\jwminecraftshare.file.core.windows.net\share /u:AZURE\jwminecraftshare [key]
 ```
 
 Then the next command below will link a local path to that drive share.
 
-``` sh
+``` powershell
 mklink /d "c:\Data" "\\jwminecraftshare.file.core.windows.net\share" 
 ```
 
