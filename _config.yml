@@ -1,7 +1,7 @@
 # Site
 title: Justin Wendlandt's Blog
 description: Application Development using Azure
-url: https://www.jwendl.net
+url: http://localhost:4000 # https://www.jwendl.net
 logo: profile.jpg                                       # Site logo
 locale: en_US
 

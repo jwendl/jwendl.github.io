@@ -2,7 +2,7 @@
 layout: page
 title: "Analytics"
 graphs: "true"
-permalink: /analytics.html
+permalink: /analytics
 graphs: "true"
 ---
 # Site Analytics

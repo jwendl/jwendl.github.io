@@ -1,5 +1,5 @@
 .block-left {
-  width: 30%;
+  width: 25%;
   float: left;
   .content {
     z-index: 1;
@@ -8,7 +8,7 @@
 }
 
 .block-right {
-  width: 70%;
+  width: 75%;
   float: right;
   overflow-y: auto;
 }
@@ -20,7 +20,6 @@
   display: table;
   > div {
     display: table-cell;
-    vertical-align: middle;
   }
   .content {
     height: 100%;
@@ -283,7 +282,7 @@ canvas {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 250px;
   display: inline-block;
   height: auto;
   background-size: 100%;
@@ -405,6 +404,36 @@ canvas {
   }
 }
 
+.menu {
+  margin-top: 120px;
+  h2 {
+    color: $white;
+  }
+  a {
+    color: $white;
+    font-size: large;
+    font-weight: bold;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.related {
+  margin-bottom: 25px;
+}
+
+.social-icons {
+  a {
+    display: inline-block;
+    font-size: 1.8em;
+    color: $white;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
 .about-info {
   text-align: left;
   h1,
@@ -471,7 +500,7 @@ canvas {
     left: 20px;
     position: absolute;
     img {
-      width: 50px;
+      max-width: 150px;
       height: auto;
     }
     &:after {
@@ -481,19 +510,10 @@ canvas {
 }
 
 .section-title {
-  font-size: 100px;
   position: absolute;
   bottom: 50px;
   left: 50px;
   color: rgba($white, 0.6);
-  -ms-word-wrap: break-word;
-  word-wrap: break-word;
-  em {
-    font-style: italic;
-  }
-  span {
-    font-size: 20px;
-  }
 }
 
 .posts-list {
@@ -553,7 +573,6 @@ canvas {
   h1 {
     font-size: 70px;
     line-height: 70px;
-    margin-bottom: 50px;
   }
   h2 {
     font-size: 30px;
@@ -594,6 +613,21 @@ canvas {
       margin-bottom: 20px;
       &:first-child {
         margin-top: 20px;
+      }
+    }
+  }
+  .tags {
+    margin-top: 0;
+    margin-bottom: 20px;
+    > li {
+      display: inline-block;
+      background: darken($white, 5%);
+      padding: 7px 10px;
+      color: lighten($black, 28%);
+      font-size: 11px;
+      text-transform: uppercase;
+      > a {
+        color: $white;
       }
     }
   }
@@ -770,7 +804,6 @@ canvas {
   .inner-post {
     h2 {
       font-size: 20px;
-      margin-bottom: 20px;
     }
     p,
     li {
