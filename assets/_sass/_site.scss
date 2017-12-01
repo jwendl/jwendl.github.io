@@ -500,7 +500,7 @@ canvas {
     left: 20px;
     position: absolute;
     img {
-      max-width: 150px;
+      max-width: 125px;
       height: auto;
     }
     &:after {
@@ -782,7 +782,7 @@ canvas {
     display: none;
   }
   .logo {
-    max-width: 150px;
+    max-width: 125px;
   }
   .social-icons {
     font-size: 1.2em;
@@ -840,6 +840,12 @@ canvas {
   }
   .content {
     padding: 20px
+  }
+  .logo {
+    max-width: 125px;
+  }
+  .social-icons {
+    font-size: 0.4em;
   }
 }
 
