@@ -781,6 +781,12 @@ canvas {
   .share-buttons span {
     display: none;
   }
+  .logo {
+    max-width: 150px;
+  }
+  .social-icons {
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (max-width: 640px) {
