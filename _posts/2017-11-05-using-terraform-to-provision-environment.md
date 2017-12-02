@@ -17,7 +17,7 @@ To install Terraform using the Windows Subsystem for Linux just use the followin
 ``` bash
 wget https://releases.hashicorp.com/terraform/0.10.8/terraform_0.10.8_linux_amd64.zip -O terraform.zip
 unzip terraform.zip
-chmod 700 terraform
+chmod +x terraform
 sudo mv terraform /usr/local/bin/terraform
 ```
 

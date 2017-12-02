@@ -118,3 +118,5 @@ For a Windows container
 ``` bash
 user@pc:~$ docker exec -it 4f powershell
 ```
+
+You can find more tips and tricks on my [developer notes](https://www.jwendl.net/code-notes/docker/commands/) page.
