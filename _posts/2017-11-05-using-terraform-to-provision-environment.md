@@ -1,12 +1,21 @@
 ---
 layout: post
-title:  "Using Terraform to Provision your Azure Environment"
-date:   2017-11-05 14:09:00
+title: Using Terraform to Provision your Azure Environment
+date: 2017-11-05T14:09:00.000Z
 categories:
- - Azure
+  - Azure
 tags:
- - azure
- - terraform
+  - azure
+  - terraform
+comments:
+  - author:
+      type: github
+      displayName: jwendl
+      url: 'https://github.com/jwendl'
+      picture: 'https://avatars1.githubusercontent.com/u/1068431?v=4&s=73'
+    content: This is a test.
+    date: 2017-12-06T08:05:40.097Z
+
 ---
 Terraform provides a nice interface from the command line through the [Azure GO SDK](https://github.com/Azure/azure-sdk-for-go) to Azure itself. In order to accomplish this, we need to utilize the [AzureRM](https://github.com/jwendl/terraform-provider-azurerm) provider for Terraform. When you have a main.tf file that uses an AzureRM configuration, Terraform will automatically download the AzureRM provider when calling terraform init (see below).
 
