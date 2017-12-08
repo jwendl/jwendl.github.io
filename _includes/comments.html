@@ -1,37 +1,45 @@
-<noscript>Please enable JavaScript to view the comment form powered by <a href="https://commentit.io/">Comm(ent|it)</a></noscript>
-<div id="commentit"></div>
-<script type="text/javascript">
-  /** CONFIGURATION VARIABLES **/
-  var commentitUsername = 'jwendl';
-  var commentitRepo = 'jwendl/jwendl.github.io';
-  var commentitPath = '{{ page.path }}';
+<form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.branch }}/comments">
+  <input name="options[redirect]" type="hidden" value="https://idiologos.netlify.com">
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <div class="form-field">
+    <label for="fields[name]">Name</label>
+    <input name="fields[name]" type="text">
+  </div>
+  <div class="form-field">
+    <label for="fields[email]">E-mail (optional)</label>
+    <input name="fields[email]" type="email">
+  </div>
+  <div class="form-field">
+    <label for="fields[message]">Message (<a href="https://kramdown.gettalong.org/syntax.html">kramdown</a> markup allowed)</label>
+    <textarea style="width:100%" name="fields[message]" rows="12"></textarea>
+  </div>
+  <div>
+    <legend><em>Comments will appear after moderation.</em></legend>
+    <button type="submit">Submit Comment</button>
+  </div>
+</form>
 
-  /** DON'T EDIT FOLLOWING LINES **/
-  (function() {
-      var commentit = document.createElement('script');
-      commentit.type = 'text/javascript';
-      commentit.async = true;
-      commentit.src = 'https://commentit.io/static/embed/dist/commentit.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(commentit);
-  })();
-</script>
+<p>
+  <hr />
+</p>
 
-{%if page.comments %}
-{% assign sorted_comments = (page.comments | sort: 'date') %}
+{% if site.data.comments[page.slug] %}
+  <h3>
+    {% if site.data.comments[page.slug].size > 1 %}
+      {{ site.data.comments[page.slug] | size }}
+    {% endif %}
+    Comments:
+  </h3>
+  <p>
+  <hr />
+
+  {% assign comments = site.data.comments[page.slug] | sort %}
+  {% for comment in comments %}
+    <br />
+    <legend><strong>{{ comment[1].name }}</strong><legend>
+    <em>{{ comment[1].date | date: "%B %d, %Y" }}</em>
+    <p>{{ comment[1].message | markdownify }}
+    <hr />
+  {% endfor %}
+  </p>
 {% endif %}
-{% for c in sorted_comments %}
-<div class="media">
-  <div class="media-left">
-    <img src="{{ c.author.picture }}" alt="{{ c.author.displayName}}" height="73" width="73">
-  </div>
-  <div class="media-body">
-    <p class="text-muted">
-      <a href="{{ c.author.url }}">{{ c.author.displayName }}</a>
-      on {{ c.date | date: "%a, %b %d, %Y" }}
-    </p>
-    <p>{{ c.content | newline_to_br }}</p>
-  </div>
-</div>
-{% else %}
-There are no comments on this post.
-{% endfor %}

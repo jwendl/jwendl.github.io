@@ -9,6 +9,10 @@ locale: en_US
 background:
  - images/castle-001.jpg
 
+# Staticman
+repository: jwendl.github.io
+branch: docs-branch
+
 # Jekyll
 # permalink:          /:title/
 permalink:          /:year/:month/:day/:title/
