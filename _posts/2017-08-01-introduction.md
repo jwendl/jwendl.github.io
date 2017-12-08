@@ -23,3 +23,10 @@ public static void Main(string[] args)
 ``` python
 print("Hello World!")
 ```
+
+## Json
+``` json
+{
+    "prop": "value"
+}
+```
