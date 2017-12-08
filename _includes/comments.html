@@ -1,20 +1,22 @@
-<form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.branch }}/comments">
+<h3>Comments</h3>
+<form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repouser }}/{{ site.repository }}/{{ site.branch }}/comments">
   <input name="options[redirect]" type="hidden" value="https://idiologos.netlify.com">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <div class="form-field">
-    <label for="fields[name]">Name</label>
     <input name="fields[name]" type="text">
+    <label for="fields[name]">Name</label>
   </div>
   <div class="form-field">
-    <label for="fields[email]">E-mail (optional)</label>
     <input name="fields[email]" type="email">
+    <label for="fields[email]">E-mail (optional)</label>
   </div>
   <div class="form-field">
-    <label for="fields[message]">Message (<a href="https://kramdown.gettalong.org/syntax.html">kramdown</a> markup allowed)</label>
+    <legend>Message (<a href="https://kramdown.gettalong.org/syntax.html">kramdown</a> markup allowed)</legend>
     <textarea style="width:100%" name="fields[message]" rows="12"></textarea>
   </div>
   <div>
     <legend><em>Comments will appear after moderation.</em></legend>
+    <br />
     <button type="submit">Submit Comment</button>
   </div>
 </form>

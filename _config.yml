@@ -1,8 +1,9 @@
 # Site
 title: Justin Wendlandt's Blog
 description: Application Development using Azure
-url: https://www.jwendl.net # http://localhost:4000 # 
-logo: profile.jpg                                       # Site logo
+url: http://localhost:4000
+# url: https://www.jwendl.net
+logo: profile.jpg
 locale: en_US
 
 # Left Block Images
@@ -10,6 +11,7 @@ background:
  - images/castle-001.jpg
 
 # Staticman
+repouser: jwendl
 repository: jwendl.github.io
 branch: docs-branch
 
