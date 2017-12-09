@@ -1,0 +1,28 @@
+<h3>Comments</h3>
+<form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.branch }}/comments">
+  <input name="options[redirect]" type="hidden" value="https://www.jwendl.net">
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <div class="form-field">
+    <input name="fields[name]" type="text">
+    <label for="fields[name]">Name</label>
+  </div>
+  <div class="form-field">
+    <input name="fields[email]" type="email">
+    <label for="fields[email]">E-mail (optional)</label>
+  </div>
+  <div class="form-field">
+    <legend>Message (<a href="https://kramdown.gettalong.org/syntax.html">kramdown</a> markup allowed)</legend>
+    <textarea name="fields[message]" rows="12"></textarea>
+  </div>
+  <div>
+    <legend><em>Comments will appear after moderation.</em></legend>
+    <button type="submit">Submit Comment</button>
+  </div>
+  
+  <div class="form-group hidden" style="display: none;">
+    <input type="hidden" name="options[origin]" value="{{ page.url | relative_url }}">
+    <input type="hidden" name="options[parent]" value="{{ page.url | relative_url }}">
+    <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
+    <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
+  </div>
+</form>

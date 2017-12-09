@@ -1,47 +1,29 @@
-<h3>Comments</h3>
-<form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repouser }}/{{ site.repository }}/{{ site.branch }}/comments">
-  <input name="options[redirect]" type="hidden" value="https://www.jwendl.net">
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <div class="form-field">
-    <input name="fields[name]" type="text">
-    <label for="fields[name]">Name</label>
-  </div>
-  <div class="form-field">
-    <input name="fields[email]" type="email">
-    <label for="fields[email]">E-mail (optional)</label>
-  </div>
-  <div class="form-field">
-    <legend>Message (<a href="https://kramdown.gettalong.org/syntax.html">kramdown</a> markup allowed)</legend>
-    <textarea style="width:100%" name="fields[message]" rows="12"></textarea>
-  </div>
-  <div>
-    <legend><em>Comments will appear after moderation.</em></legend>
-    <br />
-    <button type="submit">Submit Comment</button>
-  </div>
-</form>
-
-<p>
-  <hr />
-</p>
-
-{% if site.data.comments[page.slug] %}
-  <h3>
-    {% if site.data.comments[page.slug].size > 1 %}
-      {{ site.data.comments[page.slug] | size }}
+<div class="entry-comments">
+    {% if site.repository and site.staticman.branch %}
+      {% if site.data.comments[page.slug] %}
+        <!-- Start static comments -->
+        <div id="comments" class="js-comments">
+          <header class="section-title">
+            <h3>{% if site.data.comments[page.slug].size > 1 %}{{ site.data.comments[page.slug] | size | append: ' ' }}{% endif %}Comments</h3>
+          </header>
+          {% assign comments = site.data.comments[page.slug] | where_exp: 'item', 'item.replying_to == blank' %} 
+          <!-- {% assign comments = site.data.comments[page.slug] %} -->
+          {% for comment in comments %}            
+            {% assign index       = forloop.index %}
+            {% assign r           = comment[1].replying_to %}
+            {% assign replying_to = r | to_integer %}
+            {% assign avatar      = comment[1].avatar %}
+            {% assign email       = comment[1].email %}
+            {% assign name        = comment[1].name %}
+            {% assign url         = comment[1].url %}
+            {% assign date        = comment[1].date %}
+            {% assign message     = comment[1].message %}
+            {% include comment.html index=index replying_to=replying_to avatar=avatar email=email name=name url=url date=date message=message %}
+          {% endfor %}
+        </div>
+        <!-- End static comments -->
+      {% endif %}
+  
+      {% include comment-form.html %}
     {% endif %}
-    Comments:
-  </h3>
-  <p>
-  <hr />
-
-  {% assign comments = site.data.comments[page.slug] | sort %}
-  {% for comment in comments %}
-    <br />
-    <legend><strong>{{ comment[1].name }}</strong><legend>
-    <em>{{ comment[1].date | date: "%B %d, %Y" }}</em>
-    <p>{{ comment[1].message | markdownify }}
-    <hr />
-  {% endfor %}
-  </p>
-{% endif %}
+  </div>
