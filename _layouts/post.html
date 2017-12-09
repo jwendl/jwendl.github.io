@@ -1,14 +1,10 @@
----
-layout: compress
----
+--- layout: compress ---
 
 <!DOCTYPE html>
 <html>
-{% include head.html %}
-<body id="posts" class="inner-post-page">
-
+  {% include head.html %}
+  <body id="posts" class="inner-post-page">
     {% include menu.html %}
-
     <div class="block-right">
       <div class="share-buttons">
         {% include share.html %}
@@ -30,11 +26,14 @@ layout: compress
         {{ content }}
         {% include related.html %}
         {% include share.html %}
-        {% include comment-form.html %}
+        <div class="comment-form">
+          {% include comment-form.html %}
+          {% include comments.html %}
+        </div>
+        <h3>Navigation</h3>
         {% include page-pagination.html %}
       </div>
     </div>
-    {% include scripts.html %}
-    {% include overlay.html %}
-</body>
+    {% include scripts.html %} {% include overlay.html %}
+  </body>
 </html>

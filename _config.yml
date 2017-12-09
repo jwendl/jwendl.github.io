@@ -11,9 +11,10 @@ background:
  - images/castle-001.jpg
 
 # Staticman
-repouser: jwendl
-repository: jwendl.github.io
-branch: master
+staticman:
+  repouser: jwendl
+  repository: jwendl.github.io
+  branch: master
 
 # Jekyll
 # permalink:          /:title/

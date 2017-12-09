@@ -1,28 +1,50 @@
-<h3>Comments</h3>
-<form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repouser }}/{{ site.repository }}/{{ site.branch }}/comments">
-  <input name="options[redirect]" type="hidden" value="https://www.jwendl.net">
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <div class="form-field">
-    <input name="fields[name]" type="text">
-    <label for="fields[name]">Name</label>
-  </div>
-  <div class="form-field">
-    <input name="fields[email]" type="email">
-    <label for="fields[email]">E-mail (optional)</label>
-  </div>
-  <div class="form-field">
-    <legend>Message (<a href="https://kramdown.gettalong.org/syntax.html">kramdown</a> markup allowed)</legend>
-    <textarea name="fields[message]" rows="12"></textarea>
-  </div>
-  <div>
-    <legend><em>Comments will appear after moderation.</em></legend>
-    <button type="submit">Submit Comment</button>
-  </div>
-  
-  <div class="form-group hidden" style="display: none;">
-    <input type="hidden" name="options[origin]" value="{{ page.url | relative_url }}">
-    <input type="hidden" name="options[parent]" value="{{ page.url | relative_url }}">
-    <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
-    <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
-  </div>
-</form>
+<div id="respond">
+  <header class="comment-title">
+    <h3>Post a Comment</h3>
+      <small>
+        <a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | relative_url }}#respond" style="display:none;">Cancel reply</a>
+      </small>
+    </h3>
+  </header>
+  <form class="page__form js-form form" method="POST" action="https://api.staticman.net/v2/entry/{{ site.staticman.repouser }}/{{ site.staticman.repository }}/{{ site.staticman.branch }}/comments">
+    <div class="form-field">
+      <input id="comment-form-name" name="fields[name]" type="text" required spellcheck="false">
+      <label for="fields[name]">Name</label>
+    </div>
+    <div class="form-field">
+      <input id="comment-form-email" name="fields[email]" type="email" spellcheck="false">
+      <label for="fields[email]">E-mail
+        <small>(optional - used for
+          <a href="http://gravatar.com">Gravatar</a> image and reply notifications)</small>
+      </label>
+    </div>
+    <div class="form-field">
+      <input id="comment-form-url" name="fields[url]" type="text" spellcheck="false">
+      <label for="fields[url]">Url</label>
+    </div>
+    <div class="form-field">
+      <legend>Message (
+        <a href="https://kramdown.gettalong.org/syntax.html">kramdown</a> markup allowed)</legend>
+      <textarea id="comment-form-message" name="fields[message]" rows="12" required spellcheck="true"></textarea>
+    </div>
+    <div>
+      <legend>
+        <em>Comments will appear after moderation.</em>
+      </legend>
+    </div>
+
+    <div class="form-group hidden">
+      <input type="hidden" name="options[redirect]" value="{{ site.url }}{{ page.url | relative_url }}">
+      <input type="hidden" name="options[origin]" value="{{ page.url | relative_url }}">
+      <input type="hidden" name="options[parent]" value="{{ page.url | relative_url }}">
+      <input type="hidden" name="options[slug]" value="{{ page.slug }}">
+      <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
+      <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
+    </div>
+
+    <p class="hidden js-notice">
+      <span class="js-notice-text"></span>
+    </p>
+    <button type="submit" id="comment-form-submit" class="btn">Send Comment</button>
+  </form>
+</div>
