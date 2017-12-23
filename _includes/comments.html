@@ -7,7 +7,7 @@
           <h3>{% if site.data.comments[page.slug].size > 1 %}{{ site.data.comments[page.slug] | size | append: ' ' }}{% endif %}Comments</h3>
         </header>
         {% assign comments = site.data.comments[page.slug] | where_exp: 'item', 'item.replying_to == ""' %}
-        {{site.data.comments[page.slug] | where_exp: 'item', 'item.replying_to == ""' | sort}}
+        {{site.data.comments[page.slug] | where_exp: 'item', 'item.replying_to == ""' | sort: 'item.date'}}
         {% for comment in comments %}
           {% assign index       = forloop.index %}
           {% assign r           = comment.replying_to %}
