@@ -1,4 +1,4 @@
-<article id="comment{% unless include.r %}{{ index | prepend: '-' }}{% else %}{{ include.index | prepend: '-' }}{% endunless %}"
+<article id="comment{% unless include.replying_to %}{{ index | prepend: '-' }}{% else %}{{ include.index | prepend: '-' }}{% endunless %}"
   class="js-comment comment {% if include.name == site.author.name %}admin{% endif %} {% unless include.replying_to == "" %}child{% endunless %}">
   <div class="comment-avatar">
     {% if include.avatar %}
@@ -39,8 +39,7 @@
 {% assign replies = site.data.comments[page.slug] | where: "replying_to",i %}
 {% for reply in replies %}
   {% assign index       = forloop.index | prepend: '-' | prepend: include.index %}
-  {% assign r           = reply.replying_to %}
-  {% assign replying_to = r | to_integer %}
+  {% assign replying_to = reply.replying_to %}
   {% assign avatar      = reply.avatar %}
   {% assign email       = reply.email %}
   {% assign name        = reply.name %}
