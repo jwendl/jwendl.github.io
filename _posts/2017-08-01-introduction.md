@@ -25,8 +25,18 @@ print("Hello World!")
 ```
 
 ## Json
+
 ``` json
 {
     "prop": "value"
 }
+```
+
+## GO
+
+``` go
+package main
+import fmt
+
+fmt.Println("Hello World\n")
 ```
