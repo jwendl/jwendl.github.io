@@ -27,7 +27,7 @@ net use F: \\jwminecraftshare.file.core.windows.net\share /u:AZURE\jwminecraftsh
 Then the next command below will link a local path to that drive share.
 
 ``` powershell
-mklink /d "c:\Data" "\\jwminecraftshare.file.core.windows.net\share" 
+mklink /d "c:\Data" "\\jwminecraftshare.file.core.windows.net\share"
 ```
 
 From that point, inside the container we should be able to save files to c:\data and have it save out to the Azure File Service.

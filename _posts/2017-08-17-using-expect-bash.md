@@ -30,15 +30,15 @@ Once the expect application is installed, it can be used by creating a "recordin
 
 ``` bash
 expect <<- DONE
-	set timeout -1
+    set timeout -1
 
-	spawn mycommand --parameter value
+    spawn mycommand --parameter value
 
-	expect "?hat's your name:*"
-	send -- "Justin\r"
-	send -- "\r"
+    expect "?hat's your name:*"
+    send -- "Justin\r"
+    send -- "\r"
 
-	expect eof
+    expect eof
 DONE
 ```
 

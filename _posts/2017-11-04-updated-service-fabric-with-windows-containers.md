@@ -22,6 +22,6 @@ The next two settings that need to be set are on step #2 where we are configurin
 
 ![Cluster Screen #002](/images/posts/UpdatedClusterScreen-002.png)
 
-Then on the optional settings screen, we need to ensure that "include DNS service" is selected and that the Fabric version is set to "Automatic". The first setting enables the ability for containers to see each other as Windows requires DNS services in order for host names to be assigned to them. Docker will not do this for a Windows container. 
+Then on the optional settings screen, we need to ensure that "include DNS service" is selected and that the Fabric version is set to "Automatic". The first setting enables the ability for containers to see each other as Windows requires DNS services in order for host names to be assigned to them. Docker will not do this for a Windows container.
 
 Setting up the cluster in this particular way will allow you to run Windows containers inside Service Fabric.
