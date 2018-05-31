@@ -1,0 +1,26 @@
+<h3>Respond to this</h3>
+<form action="/fake" method="post" id="commentform" class="form-horizontal">
+  <input name="redirect" type="hidden" value="{{ site.url }}{{ page.url }}" />
+  <input name="post_id" type="hidden" value="{{ slug }}" />
+  <input id="post_uri" name="post_uri" type="hidden" value="{{ site.comments.receiver }}" />
+  <div class="form-field">
+    <label for="name">Name/alias <span>(Required, displayed)</span></label>
+    <input type="text" name="name" id="name" placeholder="Name" />
+  </div>
+  <div class="form-field">
+    <label for="email">Email <span>(Required, not shown)</span></label>
+    <input type="text" name="email" id="email" placeholder="myemail@somedomain.com" />
+  </div>
+  <div class="form-field">
+    <label for="url">Website <span>(Optional, displayed)</span></label>
+    <input type="text" name="url" id="url" placeholder="https://mywebsite.com" />
+  </div>
+  <div id="commenttext" class="form-field">
+    <textarea name="message" id="message" rows="12" required spellcheck="true" placeholder="Continue the discussion."></textarea>
+  </div>
+  <div class="form-field">
+    <label>&nbsp;</label>
+    <button onclick="setupForm()" type="button" class="btn btn-primary" id="commentbutton">Leave response</button>
+  </div>
+</form>
+<div id="commentstatus" style="clear:both" class="status"></div>

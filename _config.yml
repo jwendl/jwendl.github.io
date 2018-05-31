@@ -10,11 +10,33 @@ locale: en_US
 background:
  - images/castle-001.jpg
 
-# Staticman
-staticman:
-  repouser: jwendl
-  repository: jwendl.github.io
-  branch: master
+emptyArray: []
+
+comments:
+  # receiver: http://localhost:7071/api/PostComment
+  receiver: https://blogapplicationdata.azurewebsites.net/api/PostComment
+
+authors:
+  jwendl:
+    name: Justin Wendlandt
+    email: jwendl@hotmail.com
+    url: https://jwendl.net
+
+defaults:
+  -
+    scope:
+      path: '_pages'
+      type: pages
+    values:
+      layout: page
+      author: jwendl
+  -
+    scope:
+      path: '_posts'
+      type: posts
+    values:
+      layout: post
+      author: jwendl    
 
 # Jekyll
 # permalink:          /:title/

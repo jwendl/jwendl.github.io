@@ -10,15 +10,15 @@ tags:
 ---
 When updating a database object using Entity Framework Core and ASP.NET Core there is a decent amount of complexity involved with handling what's in the database and what is selected from the UI.
 
-> Scenario
+## Scenario ##
 
 Say we have a table Post and another table Tag with a many-to-many relationship between them defined as PostTag. When the user is editing a post, they have the opportunity to select and de-select options that may already exist in the database. Below there are a few options in how to handle this, but one of the more performant options is to do more of a "merge" operation between what's in the database and what is selected in the UI.
 
-> The Brute Force Method
+## The Brute Force Method ##
 
 One approach could be to call .Clear() on the collection and then call .Update(post) on the context. The issue with this is that we may be deleting items from the many-to-many table that we may want to keep in the database because they are still selected in the UI.
 
-> The "Merge" Method
+## The "Merge" Method ##
 
 Merging is a bit tricky, but for us LINQ comes to the rescue. We can use something like [LINQPad](http://www.linqpad.net/) to mock this up. Essentially, we will switch the Language header on LINQPad to "Statement(s)" like the screenshot below.
 

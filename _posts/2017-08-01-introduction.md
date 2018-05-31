@@ -9,7 +9,7 @@ tags:
 ---
 This is just a test page to make sure all of my blogging features are enabled. Keep an eye to this blog for more tips and tricks on Azure PaaS, .NET Core, Visual Studio Extensibility and Containers!
 
-> C\#
+## C\#
 
 ``` csharp
 public static void Main(string[] args)
@@ -18,13 +18,13 @@ public static void Main(string[] args)
 }
 ```
 
-> Python
+## Python ##
 
 ``` python
 print("Hello World!")
 ```
 
-> Json
+## Json ##
 
 ``` json
 {
@@ -32,7 +32,7 @@ print("Hello World!")
 }
 ```
 
-> GO
+## GO ##
 
 ``` go
 package main
