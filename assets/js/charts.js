@@ -10,10 +10,10 @@ $.ajax({
     data.map(function(item) {
       html += "<tr>";
       html += "<td>";
-      html += item.Page;
+      html += item.page;
       html += "</td>";
       html += "<td>";
-      html += item.UniqueHits;
+      html += item.uniqueHits;
       html += "</td>";
       html += "</tr>";
     });
@@ -35,13 +35,13 @@ $.ajax({
   dataType: 'json',
   success: function(data, textStatus, jqXHR) {
     var xColumns = data.map(function(item) {
-      return new Date(item.Timestamp);
+      return new Date(item.timestamp);
     });
 
     xColumns.unshift('x');
 
     var yValues = data.map(function(item) {
-      return item.UniqueHits;
+      return item.uniqueHits;
     });
 
     yValues.unshift('Requests');
