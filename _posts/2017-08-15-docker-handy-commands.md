@@ -39,7 +39,7 @@ The above bash_aliases file allows you to type in "docker" commands from your Ba
 
 Here is the list of commands that I find handy for Docker:
 
-## Find all running containers ##
+## Find all running containers
 
 ``` bash
 user@pc:~$ docker ps -a
@@ -49,7 +49,7 @@ fd476fc28b42        microsoft/iis       "C:\\ServiceMonitor..."   54 seconds ago
 bb45a1bba814        microsoft/iis       "C:\\ServiceMonitor..."   29 minutes ago      Up 28 minutes           80/tcp              adoring_mclean
 ```
 
-## Finding all images on your machine ##
+## Finding all images on your machine
 
 ``` bash
 user@pc:~$ docker images -a
@@ -61,25 +61,25 @@ microsoft/dotnet-framework                                      latest          
 microsoft/windowsservercore                                     latest              2c42a1b4dea8        5 weeks ago         10.2GB
 ```
 
-## Killing all containers on your machine ##
+## Killing all containers on your machine
 
 ``` bash
 user@pc:~$ docker kill `docker ps -aq`
 ```
 
-## Removing all containers from your machine ##
+## Removing all containers from your machine
 
 ``` bash
 user@pc:~$ docker rm `docker ps -aq`
 ```
 
-## Removing all images from your machine ##
+## Removing all images from your machine
 
 ``` bash
 user@pc:~$ docker rmi `docker images -aq`
 ```
 
-## Referencing a specific image id ##
+## Referencing a specific image id
 
 One thing I learned during my investigation of Docker as well, is that the full image id can be reduced in the command line to the most unique set of characters.
 
@@ -89,7 +89,7 @@ For instance, if your container id is 4f803ffceb5301bd94cfa2b9f931a36493effd50e9
 user@pc:~$ docker kill 4f
 ```
 
-## Building a docker image and uploading to a private repository ##
+## Building a docker image and uploading to a private repository
 
 This example is assuming an ASP.NET Core application.
 
@@ -105,7 +105,7 @@ docker push myregistry.azurecr.io/samples/my-tag
 
 After all of the commands finish, you can now reference myregistry.azurecr.io in your docker container.
 
-## Open a command prompt in an already running container ##
+## Open a command prompt in an already running container
 
 For a Linux container
 

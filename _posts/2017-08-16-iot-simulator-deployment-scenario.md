@@ -14,7 +14,7 @@ This Azure Resource Manager template builds out an Azure Service Fabric cluster 
 
 To get the fully combined template, please go to this [GitHub Repository](https://github.com/Azure/azure-quickstart-templates)
 
-## ARM Template Configuration ##
+## ARM Template Configuration
 
 To enable Azure Service Fabric with Windows Containers, there are three properties in our Azure Resource Manager template that we need to ensure that we have enabled.
 
@@ -44,7 +44,7 @@ To enable Azure Service Fabric with Windows Containers, there are three properti
 
 The full example is available at [GitHub](https://github.com/Azure/azure-quickstart-templates)
 
-## IoT Hubs with Endpoints and Routes ##
+## IoT Hubs with Endpoints and Routes
 
 To build out an IoT Hub with endpoints and routes, there are two properties that need to be filled out.
 

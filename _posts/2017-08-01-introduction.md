@@ -18,13 +18,13 @@ public static void Main(string[] args)
 }
 ```
 
-## Python ##
+## Python
 
 ``` python
 print("Hello World!")
 ```
 
-## Json ##
+## Json
 
 ``` json
 {
@@ -32,7 +32,7 @@ print("Hello World!")
 }
 ```
 
-## GO ##
+## GO
 
 ``` go
 package main
