@@ -19,11 +19,11 @@ To get the information required for these options, we first can go to [App Dev P
 
 From that portal screen, we will click on "New Registration"
 
-![Azure AD App Registration](/images/Posts/AzureAdPortal-001.png)
+![Azure AD App Registration](/images/posts/AzureAdPortal-001.png)
 
 The next step is to create the information needed for the new application registration.
 
-![Azure AD App Registration First Screen](/images/Posts/AzureAdPortal-002.png)
+![Azure AD App Registration First Screen](/images/posts/AzureAdPortal-002.png)
 
 After selecting the "Register" button, it should naviage you to the overview of the new preview portal experience.
 
@@ -41,13 +41,13 @@ https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token
 
 The Client Id and Tenant Id fields can be retrieved from the overview page on the Azure AD Portal.
 
-![Azure AD Client Id](/images/Posts/AzureAdPortal-003.png)
+![Azure AD Client Id](/images/posts/AzureAdPortal-003.png)
 
 To generate the Client Secret, we will need to go into the "Certificates & Secrets" screen in the Azure AD Portal. Then we can click on the "New client secret" button.
 
 Copy the secret into the Client Secret field (it should look something like the screenshot below)
 
-![Azure AD Client Secret](/images/Posts/AzureAdPortal-004.png)
+![Azure AD Client Secret](/images/posts/AzureAdPortal-004.png)
 
 The redirect URL can be created on the "Authentication" tab under the app registration blade. I usually just set it to https://localhost/ when using Insomnia to test APIs with.
 
@@ -65,4 +65,4 @@ Feel free to comment below on how easy this is to setup, or if there's feedback 
 
 The end result should look something like the following screenshot.
 
-![End Result](/images/Posts/Insomnia-002.png)
+![End Result](/images/posts/Insomnia-002.png)
