@@ -90,7 +90,7 @@ youtube:            MrJwendlandt
 #behance:           username
 
 # Gems
-gems:
+plugins:
  - jekyll-mermaid
  - jekyll-feed
  - jekyll-sitemap
