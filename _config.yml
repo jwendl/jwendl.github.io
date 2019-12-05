@@ -56,9 +56,6 @@ sass:
   sass_dir:         assets/_sass
   style:            compressed
 
-mermaid:
-  src: '/assets/js/mermaid.min.js'
-
 # Google Analytics
 #google-analytics: UA-XXXXX-Y
 application-insights: e1a8a4aa-7483-4061-8861-487cefe367d0
@@ -91,7 +88,6 @@ youtube:            MrJwendlandt
 
 # Gems
 plugins:
- - jekyll-mermaid
  - jekyll-feed
  - jekyll-sitemap
  - jekyll-gist
