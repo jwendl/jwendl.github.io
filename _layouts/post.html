@@ -4,37 +4,39 @@ layout: compress
 
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-  <body id="posts" class="inner-post-page">
+{% include head.html %}
+
+<body id="posts" class="inner-post-page">
     {% include menu.html %}
     <div class="block-right">
-      <div class="share-buttons">
-        {% include share.html %}
-      </div>
-      <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
-      <a title="{{ site.url }}/projects" class="projects-menu-icon">
-        <span></span>
-      </a>
-      <div class="inner-post content">
-        <div class="date-highlight">{% if page.date %}{{ page.date | date: "%a, %b %d, %Y" }}{% else %}&#x2756;{% endif %}</div>
-        <h1>{{ page.title }}</h1>
-        <div class="tags">
-          {% for tag in page.tags %}
-            <a href="{{ site.url }}/tags#{{ tag }}" class="btn">{{ tag | upcase }}</a>
-            {% unless forloop.last %}
-            {% endunless %}
-          {% endfor %}
+        <div class="share-buttons">
+            {% include share.html %}
         </div>
-        {{ content }}
-        {% include related.html %}
-        {% include share.html %}
-        <div class="comments">
-          {% include comments.html %}
+        <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
+        <a title="{{ site.url }}/projects" class="projects-menu-icon">
+            <span></span>
+        </a>
+        <div class="inner-post content">
+            <div class="date-highlight">{% if page.date %}{{ page.date | date: "%a, %b %d, %Y" }}{% else %}&#x2756;{% endif %}</div>
+            <h1>{{ page.title }}</h1>
+            <div class="tags">
+                {% for tag in page.tags %}
+                <a href="{{ site.url }}/tags#{{ tag }}" class="btn">{{ tag | upcase }}</a>
+                {% unless forloop.last %}
+                {% endunless %}
+                {% endfor %}
+            </div>
+            {{ content }}
+            {% include related.html %}
+            {% include share.html %}
+            <div class="comments">
+                <div id="gitalk-container"></div>
+            </div>
+            <h3>Navigation</h3>
+            {% include page-pagination.html %}
         </div>
-        <h3>Navigation</h3>
-        {% include page-pagination.html %}
-      </div>
     </div>
     {% include scripts.html %} {% include overlay.html %}
-  </body>
+</body>
+
 </html>
