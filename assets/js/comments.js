@@ -1,24 +1,11 @@
-function setupForm() {
-  var postUri = document.getElementById('post_uri');
-  var status = document.getElementById('commentstatus');
-  status.innerText = '';
+const gitalk = new Gitalk({
+    clientID: '918424798bbbf62c26c9',
+    clientSecret: '5946db2d9006ac18b8c2c59427f50c0754faa320',
+    repo: 'jwendl.net',
+    owner: 'jwendl',
+    admin: ['jwendl'],
+    id: location.pathname,
+    distractionFreeMode: false
+})
 
-  var requiredIds = [ 'message', 'email', 'name'];
-  var missing = requiredIds.filter(id => document.getElementById(id).value.length < 3);
-  if (missing.length > 0) {
-    status.innerText = 'Some required fields are missing - (' + missing.join(', ') + ')';
-    return;
-  }
-
-  var button = document.getElementById('commentbutton');
-  if (button.innerText != 'Confirm comment') {
-    button.innerText = 'Confirm comment';
-    return;
-  }
-
-  var form = document.getElementById('commentform');
-  form.action = postUri.value;
-  button.innerText = 'Posting...';
-  button.disabled = true;
-  form.submit();
-}
+gitalk.render('gitalk-container')
