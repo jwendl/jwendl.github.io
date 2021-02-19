@@ -53,12 +53,13 @@ kramdown:
   syntax_highlighter: 
                     rouge
 sass:
-  sass_dir:         assets/_sass
+  sass_dir:        12483061 assets/_sass
   style:            compressed
 
 # Google Analytics
 #google-analytics: UA-XXXXX-Y
-application-insights: e1a8a4aa-7483-4061-8861-487cefe367d0
+#application-insights: e1a8a4aa-7483-4061-8861-487cefe367d0
+statcounter: 12483061
 
 # Social Links
 email:              jwendl@hotmail.com
