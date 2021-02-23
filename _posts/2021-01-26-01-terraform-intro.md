@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An Introduction to Terrform for Azure"
+title:  "An Introduction to Terraform for Azure"
 date:   2021-01-26 12:37:00
 categories:
  - Terraform
