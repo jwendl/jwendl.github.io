@@ -303,17 +303,6 @@ resource "azurerm_sql_active_directory_administrator" "sql_database_administrato
 }
 ```
 
-values.tfvars
-
-``` hcl
-# No secrets in here they should be in Key Vault
-
-resource_group_name="TestDemo"
-resource_group_location="westus2"
-resource_prefix="jwdemo"
-resource_postfix="dev"
-```
-
 provider.tf
 
 ``` hcl

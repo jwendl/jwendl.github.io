@@ -92,6 +92,21 @@ output "resource_group_name" {
 }
 ```
 
+## Handling Variables
+
+Since we can concatenate inside the main.tf file we really just need to setup a few variables for our tfvars file, similar to this example below.
+
+values.tfvars
+
+``` hcl
+# No secrets in here they should be in Key Vault
+
+resource_group_name="TestDemo"
+resource_group_location="westus2"
+resource_prefix="jwdemo"
+resource_postfix="dev"
+```
+
 ## Handling Dependencies
 
 When using modules with Terraform we have to be careful of how dependencies are being built. If something is referenced as a variable value it will not "wait" for that reference to exist in Azure. This is why it's strongly encouraged to use output variables for every module, so the consumer of your module can reference it and build the dependency graph.
