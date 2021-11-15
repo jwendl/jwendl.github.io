@@ -17,7 +17,11 @@ I run docker out of WSL and used the following [setup](https://github.com/frcs6/
 To get this docker container to run for me inside WSL I just ran the following bash command
 
 ``` bash
-docker run --rm -it -p 5000:5000 --memory 4g --cpus 4 \\nmcr.microsoft.com/azure-cognitive-services/speechservices/speech-to-text \\nEula=accept \\nBilling=https://westus2.api.cognitive.microsoft.com/sts/v1.0/issuetoken \\nApiKey={speech service api key}
+docker run --rm -it -p 5000:5000 --memory 4g --cpus 4 \
+    mcr.microsoft.com/azure-cognitive-services/speechservices/speech-to-text \
+    Eula=accept \
+    Billing=https://westus2.api.cognitive.microsoft.com/sts/v1.0/issuetoken \
+    ApiKey={speech service api key}
 ```
 
 > Where the {speech service api key} is the value from the speech portal where your speech service is setup.
