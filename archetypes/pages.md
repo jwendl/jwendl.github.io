@@ -5,6 +5,9 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 
+author: "jwendl"
+authorLink: "/about"
+
 tags:
 - 
 categories:

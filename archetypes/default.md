@@ -4,9 +4,10 @@ subtitle: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
-author: ""
-authorLink: ""
 description: ""
+
+author: "jwendl"
+authorLink: "/about"
 
 tags: []
 categories: []

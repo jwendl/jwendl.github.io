@@ -5,6 +5,9 @@ date: 2024-01-16T21:28:14-08:00
 lastmod: 2024-01-16T21:28:14-08:00
 draft: false
 
+author: "jwendl"
+authorLink: "/about"
+
 tags:
 - hugo
 - meta
