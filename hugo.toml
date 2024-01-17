@@ -1,0 +1,212 @@
+baseURL = "https://jwendl.net"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "Justin Wendlandt's Blog | jwendl.net"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "FeelIt"
+
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+    weight = 4
+  [[menu.main]]
+    identifier = "github"
+    pre = "<i class='fa-brands fa-github fa-fw'></i>"
+    post = ""
+    url = "https://github.com/jwendl/jwendl.github.io"
+    title = ""
+    weight = 6
+
+[params]
+  # FeelIt theme version
+  version = "1.0.X"
+
+  defaultTheme = "dark"
+  gitRepo = "https://github.com/jwendl/jwendl.github.io"
+
+  [params.search]
+    enabled = true
+    type = "lunr"
+    contentLength = 4000
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+
+  [params.about]
+    enable = true
+    param = true
+    paramTritle = "Personal Information"
+    description = "Justin Wendlandt"
+    [[params.about.status]]
+      faIcon = "fa-solid fa-building"
+      title = "Company"
+      desc = "Microsoft (Xbox Game Studios)"
+    [[params.about.status]]
+      faIcon = "fa-solid fa-briefcase fa-fw"
+      title = "Occupation"
+      desc = "Principal Software Engineer"
+    [[params.about.status]]
+      faIcon = "fa-solid fa-map-marker-alt"
+      title = "Location"
+      desc = "Washington"
+    [[params.about.parameter]]
+      language = "Azure"
+      level = "90"
+    [[params.about.parameter]]
+      language = ".NET"
+      level = "80"
+    [[params.about.parameter]]
+      language = "GO"
+      level = "50"
+
+  [params.home]
+  rss = 10
+
+    [params.home.profile]
+      enable = true
+      avatarURL = "/images/me.png"
+      subtitle = "Justin Wendlandt's Blog"
+      typeit = true
+      social = true
+
+  [params.home.posts]
+    enable = true
+    paginate = 6
+    imagePreview = true
+
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    [params.header.title]
+      post = "jwendl.net"
+      rss = true
+
+  [params.footer]
+    since = 2023
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    lightGallery = true
+    fontawesome = true
+    improveArticle = "https://github.com/jwendl/jwendl.github.io/edit/main/content/"
+    linkToMarkdown = true
+
+    [params.page.toc]
+      enable = true
+      copy = true
+      maxShownLines = 10
+
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+      HackerNews = true
+      Reddit = true
+      Digg = true
+
+    [params.page.mapbox]
+      accessToken = "pk.eyJ1IjoiandlbmRsIiwiYSI6ImNscmdxb3k5dDBnbTEycXA5MzZ1cXlkdjkifQ.hlYEKe-r5wwN-kcGeJz2yg"
+      lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
+      darkStyle = "mapbox://styles/mapbox/dark-v10?optimize=true"
+      navigation = true
+      geolocate = true
+      scale = true
+      fullscreen = true
+  
+  [params.social]
+    GitHub = "https://github.com/jwendl"
+    Linkedin = "https://www.linkedin.com/in/jwendl/"
+    Twitter = "https://twitter.com/jwendlatxbox"
+    Facebook = "https://www.facebook.com/profile.php?id=100092321439397"
+    Youtubechannel = "https://www.youtube.com/channel/UC2p6YNPaHpv52osoYRpnuwA"
+    Reddit = "https://www.reddit.com/user/jwendl"
+    Stackoverflow = "https://stackoverflow.com/users/49415/jwendl"
+    Paypal = "https://paypal.me/jwendl"
+    Steam = "https://steamcommunity.com/id/jwendl/"
+    Twitch = "https://www.twitch.tv/jwendl"
+    Discord = "https://discordapp.com/users/237753208913526794"
+    DiscordInvite = "https://discord.gg/mR6uJPcC6y"
+    RSS = true # LoveIt NEW | 0.2.0
+
+  [params.author]
+    name = "Justin Wendlandt"
+    email = "jwendl@hotmail.com"
+    link = "https://jwendl.net"
+    
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/khusika/FeelIt/issues/158)
+    noClasses = false
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true
+    style = "nord"
+
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

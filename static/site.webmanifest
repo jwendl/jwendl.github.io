@@ -1,0 +1,16 @@
+{
+    "name": "jwendl.net",
+    "short_name": "jwendl.net",
+    "icons": [
+        {
+            "src": "/logo-350x350.png",
+            "sizes": "350x350",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "orientation" : "portrait",
+    "background_color": "#333333",
+    "theme_color": "#333333"
+}
