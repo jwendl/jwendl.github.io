@@ -63,6 +63,9 @@ enableEmoji = true
   defaultTheme = "dark"
   gitRepo = "https://github.com/jwendl/jwendl.github.io"
 
+  remarkSiteId = "Blog"
+  remarkUrl = "https://comments.jwendl.net:30195"
+
   [params.search]
     enabled = true
     type = "lunr"
