@@ -41,13 +41,21 @@ enableEmoji = true
     title = ""
     weight = 3
   [[menu.main]]
+    identifier = "photos"
+    pre = ""
+    post = ""
+    name = "Photos"
+    url = "/galleries/favorites"
+    title = ""
+    weight = 4
+  [[menu.main]]
     identifier = "about"
     pre = ""
     post = ""
     name = "About"
     url = "/about/"
     title = ""
-    weight = 4
+    weight = 5
   [[menu.main]]
     identifier = "github"
     pre = "<i class='fa-brands fa-github fa-fw'></i>"
@@ -160,17 +168,17 @@ enableEmoji = true
       fullscreen = true
   
   [params.social]
-    GitHub = "https://github.com/jwendl"
-    Linkedin = "https://www.linkedin.com/in/jwendl/"
-    Twitter = "https://twitter.com/jwendlatxbox"
-    Facebook = "https://www.facebook.com/profile.php?id=100092321439397"
-    Youtubechannel = "https://www.youtube.com/channel/UC2p6YNPaHpv52osoYRpnuwA"
-    Reddit = "https://www.reddit.com/user/jwendl"
-    Stackoverflow = "https://stackoverflow.com/users/49415/jwendl"
-    Paypal = "https://paypal.me/jwendl"
-    Steam = "https://steamcommunity.com/id/jwendl/"
-    Twitch = "https://www.twitch.tv/jwendl"
-    Discord = "https://discordapp.com/users/237753208913526794"
+    GitHub = "jwendl"
+    Linkedin = "jwendl"
+    Twitter = "jwendlatxbox"
+    Facebook = "100092321439397"
+    Youtubechannel = "UC2p6YNPaHpv52osoYRpnuwA"
+    Reddit = "jwendl"
+    Stackoverflow = "49415/jwendl"
+    Paypal = "jwendl"
+    Steam = "jwendl"
+    Twitch = "jwendl"
+    Discord = "237753208913526794"
     DiscordInvite = "https://discord.gg/mR6uJPcC6y"
     RSS = true # LoveIt NEW | 0.2.0
 
