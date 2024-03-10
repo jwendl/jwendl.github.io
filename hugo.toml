@@ -1,9 +1,9 @@
-baseURL = "https://jwendl.net"
+baseURL = "https://jwendl.dev"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"
-title = "Justin Wendlandt's Blog | jwendl.net"
+title = "Justin Wendlandt's Blog | jwendl.dev"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "FeelIt"
@@ -72,7 +72,7 @@ enableEmoji = true
   gitRepo = "https://github.com/jwendl/jwendl.github.io"
 
   remarkSiteId = "Blog"
-  remarkUrl = "https://comments.jwendl.net"
+  remarkUrl = "https://comments.jwendl.dev"
 
   [params.search]
     enabled = true
@@ -129,7 +129,7 @@ enableEmoji = true
     desktopMode = "fixed"
     mobileMode = "auto"
     [params.header.title]
-      post = "jwendl.net"
+      post = "jwendl.dev"
       rss = true
 
   [params.footer]
@@ -185,7 +185,7 @@ enableEmoji = true
   [params.author]
     name = "Justin Wendlandt"
     email = "jwendl@hotmail.com"
-    link = "https://jwendl.net"
+    link = "https://jwendl.dev"
     
 # Markup related configuration in Hugo
 [markup]
