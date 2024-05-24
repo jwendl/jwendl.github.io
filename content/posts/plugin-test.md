@@ -133,10 +133,6 @@ graphServiceClient.Dispose();
 
 {{< mapbox lat=47.643543 lng=-122.130821 zoom=12 >}}
 
-## Gist
-
-{{< gist jwendl 2926a04e0e41339fc91ff42f20506b4c >}}
-
 ## Tweet
 
 {{< oembed "tweet" "https://twitter.com/DnDBeyond/status/1745905155336282405" >}}
