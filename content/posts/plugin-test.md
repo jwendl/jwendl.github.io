@@ -135,7 +135,6 @@ graphServiceClient.Dispose();
 
 ## Tweet
 
-{{< oembed "tweet" "https://twitter.com/DnDBeyond/status/1745905155336282405" >}}
 
 ## YouTube
 

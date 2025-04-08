@@ -6,7 +6,7 @@ languageCode = "en"
 title = "Justin Wendlandt's Blog | jwendl.dev"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "FeelIt"
+theme = "DoIt"
 
 enableRobotsTXT = true
 enableGitInfo = true
@@ -140,7 +140,7 @@ enableEmoji = true
     hiddenFromHomePage = false
     hiddenFromSearch = false
     lightGallery = true
-    fontawesome = true
+    fontawesome = false
     improveArticle = "https://github.com/jwendl/jwendl.github.io/edit/main/content/"
     linkToMarkdown = true
 
