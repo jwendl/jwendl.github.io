@@ -1,0 +1,16 @@
+{{- template "render-x" (dict "id" (.Get "id") "user" (.Get "user")) -}}
+
+{{- define "render-x" -}}
+  {{- $url := printf "https://x.com/%v/status/%v" .user .id -}}
+  {{- $query := querify "url" $url "theme" "dark" -}}
+  {{- $request := printf "https://publish.x.com/oembed?%s" $query -}}
+  {{- with try (resources.GetRemote $request) -}}
+    {{- with .Err -}}
+      {{- errorf "%s" . -}}
+    {{- else with .Value -}}
+      {{- (. | transform.Unmarshal).html | safeHTML -}}
+    {{- else -}}
+      {{- warnidf "shortcode-x-getremote" "The %q shortcode was unable to retrieve the remote data. See %s" $.ctx.Name $.ctx.Position -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

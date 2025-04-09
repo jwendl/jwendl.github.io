@@ -1,0 +1,21 @@
+{{ if .Store.Get "hasMermaid" }}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'base', 'themeVariables': {
+  'primaryColor': '#88C0D0',
+  'primaryTextColor': '#ECEFF4',
+  'primaryBorderColor': '#4C566A',
+  'lineColor': '#4C566A',
+  'secondaryColor': '#5E81AC',
+  'tertiaryColor': '#81A1C1',
+  'tertiaryTextColor': '#D8DEE9',
+  'tertiaryBorderColor': '#3B4252',
+  'background': '#2E3440',
+  'nodeTextColor': '#ECEFF4',
+  'mainBkg': '#3B4252',
+  'edgeLabelBackground': '#3B4252',
+  'clusterBkg': '#4C566A',
+  'clusterBorder': '#D8DEE9'
+}});
+  </script>
+{{ end }}

@@ -125,9 +125,9 @@ graphServiceClient.Dispose();
 ## Map
 
 
-
 ## Tweet
 
+{{< x user="jwendlatxbox" id="1898139930171523204" theme="dark" >}}
 
 ## YouTube
 

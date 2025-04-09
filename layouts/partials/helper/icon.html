@@ -1,0 +1,10 @@
+{{- $iconFile := resources.GetMatch (printf "icons/%s.svg" .) -}}
+{{- if $iconFile -}}
+    {{- $iconFile.Content | safeHTML -}}
+{{- else -}}
+    {{ $ctx := dict
+        "vendor" "tabler"
+        "name" (printf "%s" .)
+    }}
+    {{ partial "icons/icon" $ctx }}
+{{- end -}}

@@ -21,4 +21,4 @@ name = "X"
 url = "https://x.com"
 
 [social.params]
-icon = "brand-twitter"
+icon = "outline/brand-x"
