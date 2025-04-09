@@ -17,6 +17,10 @@ A list of random plugins to test my Hugo deployment.
 
 <!--more-->
 
+## Azure Diagram
+
+![Azure Diagram from Eraser.IO](test-diagram.png)
+
 ## Sequence Diagram
 
 ``` mermaid
