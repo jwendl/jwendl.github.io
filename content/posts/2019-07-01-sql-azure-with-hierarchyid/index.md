@@ -1,23 +1,17 @@
 ---
-title: "SQL Azure with Hierarchy Id"
-subtitle: ""
-date: 2019-07-01T12:13:00-08:00
-lastmod: 2024-01-16T21:28:14-08:00
-draft: false
+title: SQL Azure with Hierarchy Id
+slug: sql-azure-with-hierarchy-id
+date: 2019-07-01 12:13:00-08:00
 comments: true
 
-author: "jwendl"
-authorLink: "/about"
+categories:
+- Programming
 
 tags:
 - azure
 - sql
-categories:
-- Programming
-
-featuredImage: "/images/test.jpg"
-featuredImagePreview: ""
 ---
+
 We recently needed to represent data in a hierarchical format where we could inherit rules going through the ancestors and descendants from a given record in the database.
 
 Relating data in the format of a hierarchy works very well for handling a permissions database.

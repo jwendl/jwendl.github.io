@@ -1,23 +1,16 @@
 ---
-title: "Plugin Test"
-subtitle: ""
-date: 2024-01-16T21:28:14-08:00
-lastmod: 2024-01-16T21:28:14-08:00
-draft: false
+title: Plugin Test
+slug: plugin-test
+date: 2024-01-16 21:28:14-08:00
 comments: true
 
-author: "jwendl"
-authorLink: "/about"
+categories:
+- Site
 
 tags:
 - hugo
 - meta
 - plugins
-categories:
-- Site
-
-featuredImage: "/images/test.jpg"
-featuredImagePreview: ""
 ---
 
 A list of random plugins to test my Hugo deployment.
@@ -26,7 +19,7 @@ A list of random plugins to test my Hugo deployment.
 
 ## Sequence Diagram
 
-{{< mermaid >}}
+``` mermaid
 sequenceDiagram
     Alice ->> Bob: Hello Bob, how are you?
     Bob-->>John: How about you John?
@@ -36,11 +29,11 @@ sequenceDiagram
 
     Bob-->Alice: Checking with John...
     Alice->John: Yes... John, how are you?
-{{< /mermaid >}}
+```
 
 ## Gantt Chart
 
-{{< mermaid >}}
+``` mermaid
 gantt
 dateFormat  YYYY-MM-DD
 title Adding GANTT diagram to mermaid
@@ -51,7 +44,7 @@ Completed task            :done,    des1, 2014-01-06,2014-01-08
 Active task               :active,  des2, 2014-01-09, 3d
 Future task               :         des3, after des2, 5d
 Future task2               :         des4, after des3, 5d
-{{< /mermaid >}}
+```
 
 ## GoAT Diagrams
 
@@ -131,7 +124,7 @@ graphServiceClient.Dispose();
 
 ## Map
 
-{{< mapbox lat=47.643543 lng=-122.130821 zoom=12 >}}
+
 
 ## Tweet
 
@@ -141,74 +134,3 @@ graphServiceClient.Dispose();
 {{< youtube ClJ5xXcWTT4 >}}
 
 ## ECharts
-
-{{< echarts >}}
-{
-  "title": {
-    "text": "Summary Line Chart",
-    "top": "2%",
-    "left": "center"
-  },
-  "tooltip": {
-    "trigger": "axis"
-  },
-  "legend": {
-    "data": ["Email Marketing", "Affiliate Advertising", "Video Advertising", "Direct View", "Search Engine"],
-    "top": "10%"
-  },
-  "grid": {
-    "left": "5%",
-    "right": "5%",
-    "bottom": "5%",
-    "top": "20%",
-    "containLabel": true
-  },
-  "toolbox": {
-    "feature": {
-      "saveAsImage": {
-        "title": "Save as Image"
-      }
-    }
-  },
-  "xAxis": {
-    "type": "category",
-    "boundaryGap": false,
-    "data": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-  },
-  "yAxis": {
-    "type": "value"
-  },
-  "series": [
-    {
-      "name": "Email Marketing",
-      "type": "line",
-      "stack": "Total",
-      "data": [120, 132, 101, 134, 90, 230, 210]
-    },
-    {
-      "name": "Affiliate Advertising",
-      "type": "line",
-      "stack": "Total",
-      "data": [220, 182, 191, 234, 290, 330, 310]
-    },
-    {
-      "name": "Video Advertising",
-      "type": "line",
-      "stack": "Total",
-      "data": [150, 232, 201, 154, 190, 330, 410]
-    },
-    {
-      "name": "Direct View",
-      "type": "line",
-      "stack": "Total",
-      "data": [320, 332, 301, 334, 390, 330, 320]
-    },
-    {
-      "name": "Search Engine",
-      "type": "line",
-      "stack": "Total",
-      "data": [820, 932, 901, 934, 1290, 1330, 1320]
-    }
-  ]
-}
-{{< /echarts >}}
