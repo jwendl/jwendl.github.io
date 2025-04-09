@@ -18,7 +18,15 @@ icon = "brand-github"
 [[social]]
 identifier = "x"
 name = "X"
-url = "https://x.com"
+url = "https://x.com/jwendlatxbox"
 
 [social.params]
 icon = "outline/brand-x"
+
+[[social]]
+identifier = "steam"
+name = "Steam"
+url = "https://steamcommunity.com/id/jwendl/"
+
+[social.params]
+icon = "outline/brand-steam"

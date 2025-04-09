@@ -1,0 +1,41 @@
+.gist .blob-code {
+    background-color: #2E3440 !important;
+    /* Nord Polar Night */
+    color: #D8DEE9 !important;
+    /* Nord Snow Storm */
+}
+
+/* Line number column background */
+.gist .blob-num {
+    background-color: #3B4252 !important;
+    /* Nord darker gray */
+    color: #81A1C1 !important;
+    /* Nord Frost */
+    padding: 4px;
+    /* Adjust for spacing */
+    border-right: 1px solid #4C566A;
+    /* Add a subtle separator */
+}
+
+.gist .gist-meta {
+    background-color: #3B4252 !important;
+    color: #E5E9F0 !important;
+}
+
+/* Strings */
+.gist .pl-s {
+    color: #A3BE8C !important;
+    /* Nord Green */
+}
+
+/* Keywords */
+.gist .pl-k {
+    color: #81A1C1 !important;
+    /* Nord Blue */
+}
+
+/* Comments */
+.gist .pl-c {
+    color: #616E88 !important;
+    /* Nord Gray */
+}
